@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DBConnection>
+  <DB ID="1" DEFAULT="true">
+    <NAME>JSBDCDJ</NAME>
+    <TYPE>ORACLE</TYPE>
+    <IP>192.168.7.180</IP>
+    <PORT>1521</PORT>
+    <INITAL>JSBDCDJ</INITAL>
+    <USER>gx</USER>
+    <PWD>sa</PWD>
+  </DB>
+
+  <DB ID="2" DEFAULT="false">
+    <NAME>HGBDCDJ</NAME>
+    <TYPE>ORACLE</TYPE>
+    <IP>192.168.7.180</IP>
+    <PORT>1521</PORT>
+    <INITAL>JSBDCDJ</INITAL>
+    <USER>gx</USER>
+    <PWD>sa</PWD>
+  </DB>
+
+  <DB ID="3" DEFAULT="false">
+    <NAME>ZYBDCDJ</NAME>
+    <TYPE>ORACLE</TYPE>
+    <IP>192.168.7.180</IP>
+    <PORT>1521</PORT>
+    <INITAL>JSBDCDJ</INITAL>
+    <USER>gx</USER>
+    <PWD>sa</PWD>
+  </DB>
+
+</DBConnection>

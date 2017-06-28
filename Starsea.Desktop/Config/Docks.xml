@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Windows>
+  <DockSite site="Left">    
+      <Bar>
+        <CloseSingleTab>True</CloseSingleTab>
+        <GrabHandleStyle>Caption</GrabHandleStyle>
+        <AutoSyncBarCaption>True</AutoSyncBarCaption>
+        <AlwaysDisplayDockTab>False</AlwaysDisplayDockTab>
+        <CanCustomize>False</CanCustomize>
+        <CanDockBottom>True</CanDockBottom>
+        <CanDockDocument>False</CanDockDocument>
+        <CanDockLeft>False</CanDockLeft>
+        <CanDockRight>False</CanDockRight>
+        <CanDockTop>False</CanDockTop>
+        <CanUndock>False</CanUndock>
+        <CanHide>False</CanHide>
+        <Visible>False</Visible>
+        <DockTabAlignment>Bottom</DockTabAlignment>
+        <SelectedDockTab>0</SelectedDockTab>
+      </Bar>   
+      <Width>300</Width>
+      <Height>300</Height>    
+  
+  </DockSite>
+  <DockSite site="Right">
+    <Bar>
+      <CloseSingleTab>True</CloseSingleTab>
+      <GrabHandleStyle>Caption</GrabHandleStyle>
+      <AutoSyncBarCaption>True</AutoSyncBarCaption>
+      <AlwaysDisplayDockTab>False</AlwaysDisplayDockTab>
+      <CanCustomize>False</CanCustomize>
+      <CanDockBottom>True</CanDockBottom>
+      <CanDockDocument>False</CanDockDocument>
+      <CanDockLeft>False</CanDockLeft>
+      <CanDockRight>False</CanDockRight>
+      <CanDockTop>False</CanDockTop>
+      <CanUndock>False</CanUndock>
+      <CanHide>False</CanHide>
+      <Visible>False</Visible>
+      <DockTabAlignment>Bottom</DockTabAlignment>
+      <SelectedDockTab>0</SelectedDockTab>
+    </Bar>
+    <Width>300</Width>
+    <Height>300</Height>
+
+  </DockSite>
+  <DockSite site="Bottom">
+    <Bar>
+      <CloseSingleTab>True</CloseSingleTab>
+      <GrabHandleStyle>Caption</GrabHandleStyle>
+      <AutoSyncBarCaption>True</AutoSyncBarCaption>
+      <AlwaysDisplayDockTab>False</AlwaysDisplayDockTab>
+      <CanCustomize>False</CanCustomize>
+      <CanDockBottom>True</CanDockBottom>
+      <CanDockDocument>False</CanDockDocument>
+      <CanDockLeft>False</CanDockLeft>
+      <CanDockRight>False</CanDockRight>
+      <CanDockTop>False</CanDockTop>
+      <CanUndock>False</CanUndock>
+      <CanHide>False</CanHide>
+      <Visible>False</Visible>
+      <DockTabAlignment>Bottom</DockTabAlignment>
+      <SelectedDockTab>0</SelectedDockTab>
+    </Bar>
+    <Width>300</Width>
+    <Height>300</Height>
+
+  </DockSite>
+  <DockSite site="Fill">
+    <Bar>
+      <CloseSingleTab>True</CloseSingleTab>
+      <GrabHandleStyle>Caption</GrabHandleStyle>
+      <AutoSyncBarCaption>True</AutoSyncBarCaption>
+      <AlwaysDisplayDockTab>False</AlwaysDisplayDockTab>
+      <CanCustomize>False</CanCustomize>
+      <CanDockBottom>True</CanDockBottom>
+      <CanDockDocument>False</CanDockDocument>
+      <CanDockLeft>False</CanDockLeft>
+      <CanDockRight>False</CanDockRight>
+      <CanDockTop>False</CanDockTop>
+      <CanUndock>False</CanUndock>
+      <CanHide>False</CanHide>
+      <Visible>False</Visible>
+      <DockTabAlignment>Bottom</DockTabAlignment>
+      <SelectedDockTab>0</SelectedDockTab>
+    </Bar>
+    <Width>300</Width>
+    <Height>300</Height>
+  </DockSite>
+  <DockSiteToolBar site="Left">
+    <Bar>
+      <LayoutType>ToolBar</LayoutType>      
+    </Bar>
+  </DockSiteToolBar>
+  <DockSiteToolBar site="Right">
+    <Bar>
+      <LayoutType>ToolBar</LayoutType>
+    </Bar>
+  </DockSiteToolBar>
+  <DockSiteToolBar site="Top">
+    <Bar>
+      <LayoutType>ToolBar</LayoutType>
+    </Bar>
+  </DockSiteToolBar>
+  <DockSiteToolBar site="Bottom">
+    <Bar>
+      <LayoutType>ToolBar</LayoutType>
+    </Bar>
+  </DockSiteToolBar>
+
+</Windows>

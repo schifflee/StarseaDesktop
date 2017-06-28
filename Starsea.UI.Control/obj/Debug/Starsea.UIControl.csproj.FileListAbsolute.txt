@@ -1,0 +1,12 @@
+G:\GitHubSrc\StarseaDesktop\Starsea.UI.Control\bin\Debug\Starsea.UIControl.dll
+G:\GitHubSrc\StarseaDesktop\Starsea.UI.Control\bin\Debug\Starsea.UIControl.pdb
+G:\GitHubSrc\StarseaDesktop\Starsea.UI.Control\bin\Debug\ComponentFactory.Krypton.Navigator.dll
+G:\GitHubSrc\StarseaDesktop\Starsea.UI.Control\bin\Debug\ComponentFactory.Krypton.Ribbon.dll
+G:\GitHubSrc\StarseaDesktop\Starsea.UI.Control\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+G:\GitHubSrc\StarseaDesktop\Starsea.UI.Control\bin\Debug\DevComponents.DotNetBar2.dll
+G:\GitHubSrc\StarseaDesktop\Starsea.UI.Control\bin\Debug\Starsea.Helper.dll
+G:\GitHubSrc\StarseaDesktop\Starsea.UI.Control\bin\Debug\Starsea.Helper.pdb
+G:\GitHubSrc\StarseaDesktop\Starsea.UI.Control\bin\Debug\DevComponents.DotNetBar2.xml
+G:\GitHubSrc\StarseaDesktop\Starsea.UI.Control\obj\Debug\Starsea.UIControl.csprojResolveAssemblyReference.cache
+G:\GitHubSrc\StarseaDesktop\Starsea.UI.Control\obj\Debug\Starsea.UIControl.dll
+G:\GitHubSrc\StarseaDesktop\Starsea.UI.Control\obj\Debug\Starsea.UIControl.pdb
