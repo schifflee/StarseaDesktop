@@ -1,0 +1,7 @@
+G:\GitHubSrc\StarseaDesktop\Starsea.Desktop\bin\Debug\Plugins\Test2\Plugin.xml
+G:\GitHubSrc\StarseaDesktop\Starsea.Desktop\bin\Debug\Plugins\Test2\Resource\Images\Menu\logo.png
+G:\GitHubSrc\StarseaDesktop\Starsea.Desktop\bin\Debug\Plugins\Test2\Starsea.Plugin.Test2.dll
+G:\GitHubSrc\StarseaDesktop\Starsea.Desktop\bin\Debug\Plugins\Test2\Starsea.Plugin.Test2.pdb
+G:\GitHubSrc\StarseaDesktop\Starsea.Plugin.Test2\obj\Debug\Starsea.Plugin.Test2.dll
+G:\GitHubSrc\StarseaDesktop\Starsea.Plugin.Test2\obj\Debug\Starsea.Plugin.Test2.pdb
+G:\GitHubSrc\StarseaDesktop\Starsea.Plugin.Test2\obj\Debug\Starsea.Plugin.Test2.csprojResolveAssemblyReference.cache

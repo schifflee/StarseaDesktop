@@ -7,39 +7,46 @@ using System.Threading.Tasks;
 namespace Starsea.Framework.Config
 {
    public class PathConfig
-    {    
+    {
+        static string AppFolder = AppDomain.CurrentDomain.BaseDirectory;
 
         public static string DBConnectionConfigPath
         {
-            get { return AppDomain.CurrentDomain.BaseDirectory + "\\Config\\DBConnection.xml"; }
+            get { return AppFolder + "\\Config\\DBConnection.xml"; }
         }
 
 
         public static string RibbonConfigPath
         {
-            get { return AppDomain.CurrentDomain.BaseDirectory + "\\Config\\Menus.xml"; }
+            get { return AppFolder + "\\Config\\Menus.xml"; }
         }
 
         public static string DockWindowConfigPath
         {
-            get { return AppDomain.CurrentDomain.BaseDirectory + "\\Config\\Docks.xml"; }
+            get { return AppFolder + "\\Config\\Docks.xml"; }
         }
 
         public static string SystemConfigPath
         {
-            get { return AppDomain.CurrentDomain.BaseDirectory + "\\Config\\System.xml"; }
+            get { return AppFolder + "\\Config\\System.xml"; }
         }
 
         public static string UserMenusConfigPath
         {
-            get { return AppDomain.CurrentDomain.BaseDirectory + "\\Config\\UserMenus.xml"; }
+            get { return AppFolder + "\\Config\\UserMenus.xml"; }
         }
 
 
 
         public static string ImageFolderPath
         {
-            get { return AppDomain.CurrentDomain.BaseDirectory + "\\Resource\\Images\\"; }
+            get { return AppFolder + "\\Resource\\Images\\"; }
+        }
+
+
+        public static string PluginFolderPath
+        {
+            get { return AppFolder + "\\Plugins\\"; }
         }
     }
 }

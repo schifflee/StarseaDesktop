@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Plugin>
+  <Name>Starsea.Plugin.Test1</Name>
+  <Version>1.0</Version>
+  <Author>starsea</Author>
+  <Description>这是一个测试的插件</Description>
+  <UI>
+    <Ribbon>
+      <Tab id="" index="1" text="插件tab">
+        <Bar id="" index="1" text="测试工具条" >
+          <Item id="1" index="1" type="button"  text="测试1"  image="Menu/logo.png"    dll="Starsea.Plugin.Test1.dll"  class="Starsea.Plugin.Test1.Test1"   func="funcTest1"  windowtype="main" ></Item>
+          <Item id="2" index="2" type="button"  text="测试2"  image="Menu/logo.png"    dll="Starsea.Plugin.Test1.dll"  class="Starsea.Plugin.Test1.Test1"   func="funcTest2"  windowtype="main" ></Item>
+          <Item id="3" index="3" type="button"  text="测试3"  image="Menu/logo.png"    dll="Starsea.Plugin.Test1.dll"  class="Starsea.Plugin.Test1.Test1"   func="funcTest3"  windowtype="main" ></Item>
+          <Item id="4" index="4" type="button"  text="测试4"  image="Menu/logo.png"    dll="Starsea.Plugin.Test1.dll"  class="Starsea.Plugin.Test1.Test1"   func="funcTest4"  windowtype="main" ></Item>
+        </Bar>
+      </Tab>
+    </Ribbon>
+  </UI>
+  <Components>
+
+  </Components>
+
+</Plugin>

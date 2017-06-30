@@ -9,7 +9,9 @@ namespace Starsea.Framework.Model.XML
 {
    public class DockSiteToolBarBar
     {
-     
+        [XmlElement("Visible")]
+        public bool Visible { get; set; }
+
         [XmlElement("LayoutType")]
         public string LayoutType { get; set; }
     }

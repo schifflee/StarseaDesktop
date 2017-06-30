@@ -1,5 +1,6 @@
 ﻿using DevComponents.DotNetBar;
 using Starsea.Framework.Config;
+using Starsea.Framework.Model.System;
 using Starsea.Framework.Model.XML;
 using Starsea.Helper;
 using Starsea.UIControl;
@@ -8,7 +9,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,16 +22,53 @@ namespace Starsea.Desktop
     {
         public MainForm()
         {
-            InitializeComponent();          
+            InitializeComponent();
+            //加载系统菜单
             AddRibbonFromConfig();
-
-            AddBarManager();
+            //加载系统面板
+            AddBarManagerFromConfig();
             rc.SendToBack();
+            //扫描插件文件夹
+            ScannPlugins();
+            //添加插件 菜单设置  对应事件
+            SetPluginMenu();
 
+            //初始化插件库
 
-            //  this.SuspendLayout();
 
         }
+
+        private void SetPluginMenu()
+        {
+            if (pluginInfoList != null && pluginInfoList.Count > 0)
+            {
+                foreach (PluginInfo pluginInfo in pluginInfoList)
+                {
+                    AddRibbonTab(pluginInfo.plugin.UI.Ribbon, "Plugin", pluginInfo.path);
+                }
+
+            }
+        }
+
+        private void ScannPlugins()
+        {
+            pluginInfoList = new List<PluginInfo>();
+            string[] dirs = Directory.GetDirectories(PathConfig.PluginFolderPath);
+            if (dirs != null && dirs.Length > 0)
+            {
+                foreach (string pluginFolder in dirs)
+                {
+                    string pluginXMLpath = pluginFolder + "\\Plugin.xml";
+                    Plugin plugin = XmlClassHelper.LoadXML2Class<Plugin>(pluginXMLpath);
+                    PluginInfo pluginfo = new PluginInfo();
+                    pluginfo.path = pluginFolder;
+                    pluginfo.plugin = plugin;
+                    pluginInfoList.Add(pluginfo);
+                }
+            }
+
+        }
+
         private System.ComponentModel.IContainer components = null;
 
         protected override void Dispose(bool disposing)
@@ -41,29 +81,26 @@ namespace Starsea.Desktop
         }
 
         UIRibbonControl rc;
+        UIBarManager bm;
+        List<PluginInfo> pluginInfoList;
 
-        private void AddRibbonFromConfig() {
-            Ribbon ribbon = XmlClassHelper.LoadXML2Class<Ribbon>(PathConfig.RibbonConfigPath);
+        public delegate void buttonClick(object sender, EventArgs e);
 
-            rc = new UIRibbonControl();
-            //rc.Dock = DockStyle.Top;
-            this.Controls.Add(rc);
 
-            //程序设置按钮
-            UIApplicationButton ab = new UIApplicationButton();
-            rc.Items.AddRange(new BaseItem[] { ab });
-
-            //快速工具条 按钮
-              UIButtonItem qbuttonitem1 = new UIButtonItem();
-            qbuttonitem1.Image = null;
-            UIButtonItem qbuttonitem2 = new UIButtonItem();
-            UIButtonItem qbuttonitem3 = new UIButtonItem();
-            rc.QuickToolbarItems.AddRange(new DevComponents.DotNetBar.BaseItem[] { qbuttonitem1, qbuttonitem2, qbuttonitem3 });
+        private void AddRibbonTab(Ribbon ribbon, string type, string pluginFloderPath)
+        {
+            string basePath = PathConfig.ImageFolderPath;
+            if (type == "Plugin")
+            {
+                basePath = pluginFloderPath + "\\Resource\\Images\\";
+            }
 
             //菜单选项卡
             List<RibbonTab> tablist = ribbon.TabList;
-            if (tablist != null && tablist.Count > 0) { 
-            foreach (RibbonTab tab in tablist) {
+            if (tablist != null && tablist.Count > 0)
+            {
+                foreach (RibbonTab tab in tablist)
+                {
                     UIRibbonTabItem tabitem1 = new UIRibbonTabItem();
                     tabitem1.Text = tab.TEXT;
                     rc.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] { tabitem1 });
@@ -76,39 +113,260 @@ namespace Starsea.Desktop
 
                     //面板按钮条
                     List<Framework.Model.XML.RibbonBar> barlist = tab.BarList;
-                    if (barlist!=null&&barlist.Count>0) {
-                        foreach (Framework.Model.XML.RibbonBar bar1 in barlist) {
+                    if (barlist != null && barlist.Count > 0)
+                    {
+                        foreach (Framework.Model.XML.RibbonBar bar1 in barlist)
+                        {
                             UIRibbonBar rBar1 = new UIRibbonBar();
-                            rBar1.Text =bar1.TEXT;
+                            rBar1.Text = bar1.TEXT;
                             rpanel1.Controls.Add(rBar1);
 
                             List<RibbonItem> itemlist = bar1.ItemList;
-                            if (itemlist!=null&&itemlist.Count>0) {
-                                foreach (RibbonItem item in itemlist) {
+                            if (itemlist != null && itemlist.Count > 0)
+                            {
+                                foreach (RibbonItem item in itemlist)
+                                {
                                     //按钮
                                     UIButtonItem buttonItem1 = new UIButtonItem();
-                                    buttonItem1.Text =item.TEXT;
-                                    buttonItem1.Image = System.Drawing.Image.FromFile(PathConfig.ImageFolderPath + item.IMAGE);
-                                    UIButtonItem buttonItem2 = new UIButtonItem();
+                                    buttonItem1.Text = item.TEXT;
+                                    buttonItem1.Image = System.Drawing.Image.FromFile(basePath + item.IMAGE);
+                                    if (item.DLL != null && item.DLL != "")
+                                    {
+                                        Assembly assembly = ReflectionHelper.getAssembly(pluginFloderPath + "\\" + item.DLL);
+                                        object obj = ReflectionHelper.CreateInstance(assembly, item.CLASS);
+                                        BindingFlags myBindingFlags = BindingFlags.Public | BindingFlags.Instance;
+                                        MethodInfo methodinfo = ReflectionHelper.GetMethod(obj, item.FUNC, myBindingFlags);
+
+                                        //EventHandler _Click = (EventHandler)Delegate.CreateDelegate(typeof(EventHandler), methodinfo); 
+                                        //buttonItem1.Click +=_Click;
+
+                                        buttonItem1.Click += delegate (object sender, EventArgs e)
+                                        {
+                                            methodinfo.Invoke(obj, new object[] { null,null});
+                                        };
+                                    }
                                     rBar1.Items.AddRange(new BaseItem[] { buttonItem1 });
 
                                 }
                             }
-                           
+
                         }
                     }
-                  
+
                 }
             }
+        }
+
+        private void ButtonItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddRibbonFromConfig()
+        {
+            Ribbon ribbon = XmlClassHelper.LoadXML2Class<Ribbon>(PathConfig.RibbonConfigPath);
+
+            rc = new UIRibbonControl();
+            //rc.Dock = DockStyle.Top;
+            this.Controls.Add(rc);
+
+            //程序设置按钮
+            UIApplicationButton ab = new UIApplicationButton();
+            rc.Items.AddRange(new BaseItem[] { ab });
+
+            //快速工具条 按钮
+            UIButtonItem qbuttonitem1 = new UIButtonItem();
+            qbuttonitem1.Image = null;
+            UIButtonItem qbuttonitem2 = new UIButtonItem();
+            UIButtonItem qbuttonitem3 = new UIButtonItem();
+            rc.QuickToolbarItems.AddRange(new DevComponents.DotNetBar.BaseItem[] { qbuttonitem1, qbuttonitem2, qbuttonitem3 });
+
+            AddRibbonTab(ribbon, "", "");
+            ////菜单选项卡
+            //List<RibbonTab> tablist = ribbon.TabList;
+            //if (tablist != null && tablist.Count > 0) {
+            //    foreach (RibbonTab tab in tablist) {
+            //        UIRibbonTabItem tabitem1 = new UIRibbonTabItem();
+            //        tabitem1.Text = tab.TEXT;
+            //        rc.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] { tabitem1 });
+
+            //        //选项卡面板 
+            //        UIRibbonPanel rpanel1 = new UIRibbonPanel();
+            //        rpanel1.RibbonTabItem = tabitem1;
+            //        tabitem1.Panel = rpanel1;
+            //        rc.Controls.Add(rpanel1);
+
+            //        //面板按钮条
+            //        List<Framework.Model.XML.RibbonBar> barlist = tab.BarList;
+            //        if (barlist != null && barlist.Count > 0) {
+            //            foreach (Framework.Model.XML.RibbonBar bar1 in barlist) {
+            //                UIRibbonBar rBar1 = new UIRibbonBar();
+            //                rBar1.Text = bar1.TEXT;
+            //                rpanel1.Controls.Add(rBar1);
+
+            //                List<RibbonItem> itemlist = bar1.ItemList;
+            //                if (itemlist != null && itemlist.Count > 0) {
+            //                    foreach (RibbonItem item in itemlist) {
+            //                        //按钮
+            //                        UIButtonItem buttonItem1 = new UIButtonItem();
+            //                        buttonItem1.Text = item.TEXT;
+            //                        buttonItem1.Image = System.Drawing.Image.FromFile(PathConfig.ImageFolderPath + item.IMAGE);
+            //                        buttonItem1.Click += new EventHandler(addDockToolItem_Click);
+            //                        rBar1.Items.AddRange(new BaseItem[] { buttonItem1 });
+
+            //                    }
+            //                }
+
+            //            }
+            //        }
+
+            //    }
+            //}
             rc.SelectFirstVisibleRibbonTab();
         }
 
-   
 
-
-        private void AddBarManagerFromConfig() {
+        private void AddBarManagerFromConfig()
+        {
             DockWindow dockwindow = XmlClassHelper.LoadXML2Class<DockWindow>(PathConfig.DockWindowConfigPath);
+            bm = new UIBarManager(this.components);
+            bm.ParentForm = this;
+            List<Framework.Model.XML.DockSite> docksitelist = dockwindow.DockSiteList;
+            if (docksitelist != null && docksitelist.Count > 0)
+            {
+                foreach (Framework.Model.XML.DockSite docksite in docksitelist)
+                {
+                    UIDockSite uidocksite = new UIDockSite();
+                    if (docksite.site == "Left")
+                    {
 
+                        uidocksite.Dock = DockStyle.Left;
+                        bm.LeftDockSite = uidocksite;
+                    }
+                    if (docksite.site == "Right")
+                    {
+
+                        uidocksite.Dock = DockStyle.Right;
+                        bm.RightDockSite = uidocksite;
+                    }
+                    if (docksite.site == "Fill")
+                    {
+
+                        uidocksite.Dock = DockStyle.Fill;
+                        bm.FillDockSite = uidocksite;
+                    }
+                    if (docksite.site == "Top")
+                    {
+
+                        uidocksite.Dock = DockStyle.Top;
+                        bm.TopDockSite = uidocksite;
+                    }
+                    if (docksite.site == "Bottom")
+                    {
+
+                        uidocksite.Dock = DockStyle.Bottom;
+                        bm.BottomDockSite = uidocksite;
+                    }
+                    this.Controls.Add(uidocksite);
+
+                    UIBar uibar = new UIBar();
+                    uibar.Name = "DockBar";
+                    uibar.Text = "窗体";
+                    uibar.CloseSingleTab = docksite.Bar.CloseSingleTab;
+                    if (docksite.Bar.GrabHandleStyle == "Caption")
+                    {
+                        uibar.GrabHandleStyle = eGrabHandleStyle.Caption;
+                    }
+                    uibar.AutoSyncBarCaption = docksite.Bar.AutoSyncBarCaption;
+                    uibar.AlwaysDisplayDockTab = docksite.Bar.AlwaysDisplayDockTab;
+                    uibar.CanCustomize = docksite.Bar.CanCustomize;
+                    uibar.CanDockBottom = docksite.Bar.CanDockBottom;
+                    uibar.CanDockDocument = docksite.Bar.CanDockDocument;
+                    uibar.CanDockLeft = docksite.Bar.CanDockLeft;
+                    uibar.CanDockRight = docksite.Bar.CanDockRight;
+                    uibar.CanDockTop = docksite.Bar.CanDockTop;
+                    uibar.CanUndock = docksite.Bar.CanUndock;
+                    uibar.CanHide = docksite.Bar.CanHide;
+                    uibar.Visible = docksite.Bar.Visible;
+                    if (docksite.Bar.DockTabAlignment == "Left")
+                    {
+                        uibar.DockTabAlignment = eTabStripAlignment.Left;
+                    }
+                    if (docksite.Bar.DockTabAlignment == "Right")
+                    {
+                        uibar.DockTabAlignment = eTabStripAlignment.Right;
+                    }
+                    if (docksite.Bar.DockTabAlignment == "Top")
+                    {
+                        uibar.DockTabAlignment = eTabStripAlignment.Top;
+                    }
+                    if (docksite.Bar.DockTabAlignment == "Bottom")
+                    {
+                        uibar.DockTabAlignment = eTabStripAlignment.Bottom;
+                    }
+
+                    //选择tab
+                    uibar.SelectedDockTab = docksite.Bar.SelectedDockTab;
+
+                    uidocksite.Controls.Add(uibar);
+
+                    uidocksite.DocumentDockContainer = new DocumentDockContainer(
+                        new DocumentBaseContainer[] {
+                                 (DocumentBaseContainer)(new DocumentBarContainer(uibar,300,400))
+                                 }, eOrientation.Horizontal
+                             );
+                    uidocksite.Location = new System.Drawing.Point(0, 161);
+                    uidocksite.Size = new System.Drawing.Size(docksite.Width, docksite.Height);
+
+
+
+                }
+            }
+            //工具条
+            List<Framework.Model.XML.DockSiteToolBar> docksitetoolbarlist = dockwindow.DockSiteToolBarList;
+            if (docksitetoolbarlist != null && docksitetoolbarlist.Count > 0)
+            {
+                foreach (Framework.Model.XML.DockSiteToolBar docksitetoolbar in docksitetoolbarlist)
+                {
+                    UIDockSite uidocksite = new UIDockSite();
+                    this.Controls.Add(uidocksite);
+                    UIBar toolbar = new UIBar();
+                    toolbar.LayoutType = eLayoutType.Toolbar;
+                    toolbar.Name = "ToolBar";
+                    toolbar.Dock = DockStyle.Bottom;
+                    uidocksite.Controls.Add(toolbar);
+
+                    toolbar.Visible = docksitetoolbar.Bar.Visible;
+                    if (docksitetoolbar.site == "Left")
+                    {
+
+                        uidocksite.Dock = DockStyle.Left;
+                        bm.ToolbarLeftDockSite = uidocksite;
+                        toolbar.DockOrientation = eOrientation.Vertical;
+                    }
+                    if (docksitetoolbar.site == "Right")
+                    {
+
+                        uidocksite.Dock = DockStyle.Right;
+                        bm.ToolbarRightDockSite = uidocksite;
+                        toolbar.DockOrientation = eOrientation.Vertical;
+                    }
+                    if (docksitetoolbar.site == "Top")
+                    {
+
+                        uidocksite.Dock = DockStyle.Top;
+                        bm.ToolbarTopDockSite = uidocksite;
+                    }
+                    if (docksitetoolbar.site == "Bottom")
+                    {
+
+                        uidocksite.Dock = DockStyle.Bottom;
+                        bm.ToolbarBottomDockSite = uidocksite;
+                    }
+
+
+                }
+            }
         }
 
         private void AddBarManager()
@@ -169,7 +427,7 @@ namespace Starsea.Desktop
 
             //左侧工作区
             UIBar dockbar_left = new UIBar();
-           // dockbar_left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            // dockbar_left.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             dockbar_left.Text = "左侧工作区";
             docksite_left.Controls.Add(dockbar_left);
             //设置大小
@@ -291,7 +549,7 @@ namespace Starsea.Desktop
                     (DocumentBaseContainer)(new DocumentBarContainer(dockbar_bottom,1366,160))
                }, eOrientation.Horizontal
                );
-           // docksite_bottom.Location = new System.Drawing.Point(0, 640);
+            // docksite_bottom.Location = new System.Drawing.Point(0, 640);
             docksite_bottom.Size = new System.Drawing.Size(1366, 160);
 
             UIPanelDockContainer pdc_bottom = new UIPanelDockContainer();
@@ -327,9 +585,49 @@ namespace Starsea.Desktop
             bi3.Text = "";
 
             dockbar_toolbottom.Items.AddRange(new BaseItem[] { bi1, bi2, bi3 });
-            
+
         }
 
+        private void loadDock_Click(object sender, EventArgs e)
+        {
+            UIBar uibar = bm.RightDockSite.Controls.Find("DockBar", true)[0] as UIBar;
+
+            UIDockContainerItem dci = new UIDockContainerItem();
+            uibar.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] { dci });
+            UIPanelDockContainer pdc = new UIPanelDockContainer();
+            uibar.Controls.Add(pdc);
+
+            dci.Control = pdc;
+            dci.Text = "选项卡111 ";
+        }
+
+        private void showDock_Click(object sender, EventArgs e)
+        {
+            UIBar uibar = bm.RightDockSite.Controls.Find("DockBar", true)[0] as UIBar;
+            // UIBar uibar = bm.ToolbarLeftDockSite.Controls.Find("ToolBar", true)[0] as UIBar;
+
+            if (uibar.Visible)
+            {
+                uibar.Visible = false;
+            }
+            else
+            {
+                uibar.Visible = true;
+            }
+        }
+
+
+
+        private void addDockToolItem_Click(object sender, EventArgs e)
+        {
+            UIBar uibar = bm.ToolbarBottomDockSite.Controls.Find("ToolBar", true)[0] as UIBar;
+
+            UIButtonItem button1 = new UIButtonItem();
+            button1.Text = "helloToolBar";
+            button1.Click += new EventHandler(loadDock_Click);
+
+            uibar.Items.AddRange(new BaseItem[] { button1 });
+        }
 
 
     }

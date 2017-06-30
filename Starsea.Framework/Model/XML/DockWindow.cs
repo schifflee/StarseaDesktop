@@ -14,6 +14,6 @@ namespace Starsea.Framework.Model.XML
         public List<DockSite> DockSiteList { get; set; }
 
         [XmlElement("DockSiteToolBar")]
-        public List<DockSite> DockSiteToolBarList { get; set; }
+        public List<DockSiteToolBar> DockSiteToolBarList { get; set; }
     }
 }

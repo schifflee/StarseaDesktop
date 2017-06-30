@@ -25,3 +25,5 @@ G:\GitHubSrc\StarseaDesktop\Starsea.Desktop\obj\Debug\Starsea.Desktop.exe
 G:\GitHubSrc\StarseaDesktop\Starsea.Desktop\obj\Debug\Starsea.Desktop.pdb
 G:\GitHubSrc\StarseaDesktop\Starsea.Desktop\bin\Debug\Starsea.Framework.dll
 G:\GitHubSrc\StarseaDesktop\Starsea.Desktop\bin\Debug\Starsea.Framework.pdb
+G:\GitHubSrc\StarseaDesktop\Starsea.Desktop\bin\Debug\Config\Docks.xml
+G:\GitHubSrc\StarseaDesktop\Starsea.Desktop\bin\Debug\DevComponents.DotNetBar.Charts.dll

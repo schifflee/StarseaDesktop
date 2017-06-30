@@ -1,0 +1,6 @@
+G:\GitHubSrc\StarseaDesktop\Starsea.Console\bin\Debug\Starsea.Console.exe.config
+G:\GitHubSrc\StarseaDesktop\Starsea.Console\bin\Debug\Starsea.Console.exe
+G:\GitHubSrc\StarseaDesktop\Starsea.Console\bin\Debug\Starsea.Console.pdb
+G:\GitHubSrc\StarseaDesktop\Starsea.Console\obj\Debug\Starsea.Console.csprojResolveAssemblyReference.cache
+G:\GitHubSrc\StarseaDesktop\Starsea.Console\obj\Debug\Starsea.Console.exe
+G:\GitHubSrc\StarseaDesktop\Starsea.Console\obj\Debug\Starsea.Console.pdb

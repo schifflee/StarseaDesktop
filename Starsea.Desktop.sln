@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.13
+VisualStudioVersion = 15.0.26430.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starsea.DB", "Starsea.DB\Starsea.DB.csproj", "{AFB87A51-B015-44A7-AC89-66260A793EAC}"
 EndProject
@@ -18,6 +18,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starsea.Desktop", "Starsea.Desktop\Starsea.Desktop.csproj", "{4EE05FF0-D34E-4109-9C1B-688F208C3F9E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "core", "core", "{2C3BC205-FA15-46BE-A8E5-16F6CF57ACFA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "plug-ins", "plug-ins", "{E495CAAE-9E87-4F96-A98D-08A5DA0EFFEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starsea.Plugin.Test1", "Starsea.Plugin.Test1\Starsea.Plugin.Test1.csproj", "{1DC9CD28-E708-4EA4-B49C-2FBBDA4039EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starsea.Plugin.Test2", "Starsea.Plugin.Test2\Starsea.Plugin.Test2.csproj", "{FDA60E60-49D8-4437-BA3E-5F56231078DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starsea.Console", "Starsea.Console\Starsea.Console.csproj", "{8FD822A7-DB28-4CE2-A273-2E02A6495C30}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +61,18 @@ Global
 		{4EE05FF0-D34E-4109-9C1B-688F208C3F9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4EE05FF0-D34E-4109-9C1B-688F208C3F9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4EE05FF0-D34E-4109-9C1B-688F208C3F9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DC9CD28-E708-4EA4-B49C-2FBBDA4039EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DC9CD28-E708-4EA4-B49C-2FBBDA4039EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DC9CD28-E708-4EA4-B49C-2FBBDA4039EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DC9CD28-E708-4EA4-B49C-2FBBDA4039EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDA60E60-49D8-4437-BA3E-5F56231078DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDA60E60-49D8-4437-BA3E-5F56231078DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDA60E60-49D8-4437-BA3E-5F56231078DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDA60E60-49D8-4437-BA3E-5F56231078DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FD822A7-DB28-4CE2-A273-2E02A6495C30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FD822A7-DB28-4CE2-A273-2E02A6495C30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FD822A7-DB28-4CE2-A273-2E02A6495C30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FD822A7-DB28-4CE2-A273-2E02A6495C30}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,5 +84,7 @@ Global
 		{06ECE53A-1F9D-4576-9639-6C7B95C31C78} = {2C3BC205-FA15-46BE-A8E5-16F6CF57ACFA}
 		{4737DDCC-148F-4E24-862F-870748F9C2BF} = {2C3BC205-FA15-46BE-A8E5-16F6CF57ACFA}
 		{09B7410C-9099-4160-90F5-DF7F4BA05647} = {2C3BC205-FA15-46BE-A8E5-16F6CF57ACFA}
+		{1DC9CD28-E708-4EA4-B49C-2FBBDA4039EB} = {E495CAAE-9E87-4F96-A98D-08A5DA0EFFEA}
+		{FDA60E60-49D8-4437-BA3E-5F56231078DC} = {E495CAAE-9E87-4F96-A98D-08A5DA0EFFEA}
 	EndGlobalSection
 EndGlobal

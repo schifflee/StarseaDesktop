@@ -1,69 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Ribbon>
-  <Tab id="" index="1" text="tab1">
-    <Bar id="" index="1" text="组1" >
-      <Item id="1" index="1" type="button"  text="按钮1"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="2" index="2" type="button"  text="按钮2"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="3" index="3" type="button"  text="按钮3"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="4" index="4" type="button"  text="按钮4"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="5" index="5" type="button"  text="按钮5"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="6" index="6" type="button"  text="按钮6"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="1" index="1" type="button"  text="按钮1"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="2" index="2" type="button"  text="按钮2"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="3" index="3" type="button"  text="按钮3"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="4" index="4" type="button"  text="按钮4"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="5" index="5" type="button"  text="按钮5"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="6" index="6" type="button"  text="按钮6"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="1" index="1" type="button"  text="按钮1"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-     
+  <Tab id="" index="1" text="界面操作">
+    <Bar id="" index="1" text="dock显示" >
+      <Item id="1" index="1" type="button"  text="left隐藏显示"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
+      <Item id="2" index="2" type="button"  text="right隐藏显示"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
+      <Item id="3" index="3" type="button"  text="top隐藏显示"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
+      <Item id="4" index="4" type="button"  text="bottom隐藏显示"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
+      <Item id="5" index="5" type="button"  text="fill隐藏显示"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
     </Bar>
-    <Bar  id="" index="2" text="组2">
-      <Item id="7" index="1"  type="button"  text="按钮7"  image="Menu/Document.png"  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="8" index="2"  type="button"  text="按钮8"  image="Menu/Document.png"  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="4" index="4" type="button"  text="按钮4"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="5" index="5" type="button"  text="按钮5"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="6" index="6" type="button"  text="按钮6"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
+    <Bar id="" index="1" text="dock操作" >
+      <Item id="1" index="1" type="button"  text="left添加"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
+      <Item id="2" index="2" type="button"  text="right添加"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
+      <Item id="3" index="3" type="button"  text="top添加"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
+      <Item id="4" index="4" type="button"  text="bottom添加"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
+      <Item id="5" index="5" type="button"  text="fill添加"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
     </Bar>
-    <Bar  id="" index="2" text="组2">
-      <Item id="7" index="1"  type="button"  text="按钮7"  image="Menu/Document.png"  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="8" index="2"  type="button"  text="按钮8"  image="Menu/Document.png"  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="4" index="4" type="button"  text="按钮4"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="5" index="5" type="button"  text="按钮5"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="6" index="6" type="button"  text="按钮6"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
+    <Bar  id="" index="2" text="工具条操作">
+      <Item id="7" index="1"  type="button"  text="left"  image="Menu/Document.png"   dll="" class=""   func=""  windowtype="main"></Item>
+      <Item id="8" index="2"  type="button"  text="right"  image="Menu/Document.png"   dll="" class=""   func=""  windowtype="main"></Item>
+      <Item id="4" index="4" type="button"  text="top"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"></Item>
+      <Item id="5" index="5" type="button"  text="bottom"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"></Item>
     </Bar>
-    <Bar  id="" index="2" text="组2">
-      <Item id="7" index="1"  type="button"  text="按钮7"  image="Menu/Document.png"  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="8" index="2"  type="button"  text="按钮8"  image="Menu/Document.png"  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="4" index="4" type="button"  text="按钮4"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="5" index="5" type="button"  text="按钮5"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="6" index="6" type="button"  text="按钮6"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-    </Bar>
-    <Bar  id="" index="2" text="组2">
-      <Item id="7" index="1"  type="button"  text="按钮7"  image="Menu/Document.png"  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="8" index="2"  type="button"  text="按钮8"  image="Menu/Document.png"  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="4" index="4" type="button"  text="按钮4"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="5" index="5" type="button"  text="按钮5"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="6" index="6" type="button"  text="按钮6"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-    </Bar>
+    <Bar  id="" index="2" text="菜单操作">
+      <Item id="7" index="1"  type="button"  text="按钮7"  image="Menu/Document.png"   dll="" class=""   func=""  windowtype="main" ></Item>
+      <Item id="8" index="2"  type="button"  text="按钮8"  image="Menu/Document.png"   dll="" class=""   func=""  windowtype="main" ></Item>
+      <Item id="4" index="4" type="button"  text="按钮4"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
+      <Item id="5" index="5" type="button"  text="按钮5"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
+      <Item id="6" index="6" type="button"  text="按钮6"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
+    </Bar>  
   </Tab>
   <Tab id="" index="2" text="tab2">
     <Bar id="" index="1" text="hello">
-      <Item id="9" index="1"  type="button"  text="按钮9"  image="Menu/Document.png"  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="2" index="2" type="button"  text="按钮2"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="3" index="3" type="button"  text="按钮3"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="4" index="4" type="button"  text="按钮4"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="5" index="5" type="button"  text="按钮5"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="6" index="6" type="button"  text="按钮6"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="1" index="1" type="button"  text="按钮1"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="2" index="2" type="button"  text="按钮2"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="3" index="3" type="button"  text="按钮3"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="4" index="4" type="button"  text="按钮4"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="5" index="5" type="button"  text="按钮5"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="6" index="6" type="button"  text="按钮6"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="1" index="1" type="button"  text="按钮1"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="2" index="2" type="button"  text="按钮2"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-      <Item id="3" index="3" type="button"  text="按钮3"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"   ></Item>
-     
+      <Item id="9" index="1"  type="button"  text="按钮9"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"  ></Item>
+      <Item id="2" index="2" type="button"  text="按钮2"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
+      <Item id="3" index="3" type="button"  text="按钮3"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
+      <Item id="4" index="4" type="button"  text="按钮4"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
+      <Item id="5" index="5" type="button"  text="按钮5"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
+      <Item id="6" index="6" type="button"  text="按钮6"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
+      <Item id="1" index="1" type="button"  text="按钮1"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
+      <Item id="2" index="2" type="button"  text="按钮2"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
+      <Item id="3" index="3" type="button"  text="按钮3"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
+      <Item id="4" index="4" type="button"  text="按钮4"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
+      <Item id="5" index="5" type="button"  text="按钮5"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
+      <Item id="6" index="6" type="button"  text="按钮6"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
+      <Item id="1" index="1" type="button"  text="按钮1"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
+      <Item id="2" index="2" type="button"  text="按钮2"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
+      <Item id="3" index="3" type="button"  text="按钮3"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
     </Bar>
   </Tab>
 </Ribbon>

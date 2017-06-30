@@ -9,49 +9,49 @@ namespace Starsea.Framework.Model.XML
 {
     public class DockSiteBar
     {
-        [XmlAttribute("CloseSingleTab")]
+        [XmlElement("CloseSingleTab")]
         public bool CloseSingleTab { get; set; }
 
-        [XmlAttribute("GrabHandleStyle")]
+        [XmlElement("GrabHandleStyle")]
         public string GrabHandleStyle { get; set; }
 
-        [XmlAttribute("AutoSyncBarCaption")]
+        [XmlElement("AutoSyncBarCaption")]
         public bool AutoSyncBarCaption { get; set; }
 
-        [XmlAttribute("AlwaysDisplayDockTab")]
+        [XmlElement("AlwaysDisplayDockTab")]
         public bool AlwaysDisplayDockTab { get; set; }
 
-        [XmlAttribute("CanCustomize")]
+        [XmlElement("CanCustomize")]
         public bool CanCustomize { get; set; }
 
-        [XmlAttribute("CanDockBottom")]
+        [XmlElement("CanDockBottom")]
         public bool CanDockBottom { get; set; }
 
-        [XmlAttribute("CanDockDocument")]
+        [XmlElement("CanDockDocument")]
         public bool CanDockDocument { get; set; }
 
-        [XmlAttribute("CanDockLeft")]
+        [XmlElement("CanDockLeft")]
         public bool CanDockLeft { get; set; }
 
-        [XmlAttribute("CanDockRight")]
+        [XmlElement("CanDockRight")]
         public bool CanDockRight { get; set; }
 
-        [XmlAttribute("CanDockTop")]
+        [XmlElement("CanDockTop")]
         public bool CanDockTop { get; set; }
 
-        [XmlAttribute("CanUndock")]
+        [XmlElement("CanUndock")]
         public bool CanUndock { get; set; }
 
-        [XmlAttribute("CanHide")]
+        [XmlElement("CanHide")]
         public bool CanHide { get; set; }
 
-        [XmlAttribute("Visible")]
+        [XmlElement("Visible")]
         public bool Visible { get; set; }
 
-        [XmlAttribute("DockTabAlignment")]
+        [XmlElement("DockTabAlignment")]
         public string DockTabAlignment { get; set; }
 
-        [XmlAttribute("SelectedDockTab")]
-        public string SelectedDockTab { get; set; }
+        [XmlElement("SelectedDockTab")]
+        public int SelectedDockTab { get; set; }
     }
 }

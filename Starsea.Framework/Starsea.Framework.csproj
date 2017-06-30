@@ -41,11 +41,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Config\PathConfig.cs" />
+    <Compile Include="Model\System\PluginInfo.cs" />
     <Compile Include="Model\XML\DockSite.cs" />
     <Compile Include="Model\XML\DockSiteBar.cs" />
     <Compile Include="Model\XML\DockSiteToolBar.cs" />
     <Compile Include="Model\XML\DockSiteToolBarBar.cs" />
     <Compile Include="Model\XML\DockWindow.cs" />
+    <Compile Include="Model\XML\Plugin.cs" />
     <Compile Include="Model\XML\RibbonBar.cs" />
     <Compile Include="Model\XML\RibbonItem.cs" />
     <Compile Include="Model\XML\RibbonTab.cs" />
@@ -54,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Action\" />
+    <Folder Include="Enum\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

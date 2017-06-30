@@ -1,8 +1,5 @@
 G:\GitHubSrc\StarseaDesktop\Starsea.DB\bin\Debug\Starsea.DB.dll
 G:\GitHubSrc\StarseaDesktop\Starsea.DB\bin\Debug\Starsea.DB.pdb
-G:\GitHubSrc\StarseaDesktop\Starsea.DB\bin\Debug\ComponentFactory.Krypton.Navigator.dll
-G:\GitHubSrc\StarseaDesktop\Starsea.DB\bin\Debug\ComponentFactory.Krypton.Ribbon.dll
-G:\GitHubSrc\StarseaDesktop\Starsea.DB\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
 G:\GitHubSrc\StarseaDesktop\Starsea.DB\obj\Debug\Starsea.DB.csprojResolveAssemblyReference.cache
 G:\GitHubSrc\StarseaDesktop\Starsea.DB\obj\Debug\Starsea.DB.dll
 G:\GitHubSrc\StarseaDesktop\Starsea.DB\obj\Debug\Starsea.DB.pdb

@@ -15,10 +15,10 @@ namespace Starsea.Framework.Model.XML
         public DockSiteBar Bar { get; set; }
 
         [XmlElement("Width")]
-        public string Width { get; set; }
+        public int Width { get; set; }
 
         [XmlElement("Height")]
-        public string Height { get; set; }
+        public int Height { get; set; }
 
     }
 
