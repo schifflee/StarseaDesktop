@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QuickDevModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="QuickDevModelStoreContainer">
+    <EntitySet Name="BASE_ACCOUNT" EntityType="QuickDevModel.Store.BASE_ACCOUNT" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Blogs" EntityType="QuickDevModel.Store.Blogs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="BlogArticles" EntityType="QuickDevModel.Store.BlogArticles" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="BlogBlogArticle" Association="QuickDevModel.Store.BlogBlogArticle">
+      <End Role="Blog" EntitySet="Blogs" />
+      <End Role="BlogArticle" EntitySet="BlogArticles" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="BASE_ACCOUNT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nchar" Nullable="false" MaxLength="10" />
+    <Property Name="ACCOUNT" Type="nchar" Nullable="true" MaxLength="100" />
+    <Property Name="PASSWORD" Type="nchar" Nullable="true" MaxLength="100" />
+    <Property Name="PERSONNAME" Type="nchar" Nullable="true" MaxLength="100" />
+    <Property Name="AGE" Type="decimal" Nullable="true" Precision="2" Scale="0" />
+    <Property Name="SEX" Type="nchar" Nullable="true" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Blogs">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="OwnerID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Caption" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DateCreate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BlogArticles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BlogId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Subject" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DateCreate" Type="datetime" Nullable="false" />
+    <Property Name="DateModify" Type="datetime" Nullable="false" />
+    <Property Name="Blog_Id" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="BlogBlogArticle">
+    <End Role="Blog" Type="QuickDevModel.Store.Blogs" Multiplicity="1" />
+    <End Role="BlogArticle" Type="QuickDevModel.Store.BlogArticles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Blog">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="BlogArticle">
+        <PropertyRef Name="Blog_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

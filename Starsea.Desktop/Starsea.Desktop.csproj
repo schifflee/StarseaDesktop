@@ -32,7 +32,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\Desktop\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -67,7 +67,14 @@
     <Reference Include="DevComponents.DotNetBar.Schedule, Version=12.7.0.10, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
     <Reference Include="DevComponents.DotNetBar2, Version=12.7.0.10, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
     <Reference Include="DevComponents.TreeGX, Version=12.7.0.10, Culture=neutral, PublicKeyToken=055db68f670cfeab, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Drawing.Design" />
@@ -108,6 +115,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -120,7 +128,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Config\DBConnection.xml">
@@ -156,6 +166,14 @@
     <Folder Include="Resource\Images\Icon\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Starsea.DB\Starsea.DB.csproj">
+      <Project>{afb87a51-b015-44a7-ac89-66260a793eac}</Project>
+      <Name>Starsea.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Starsea.Form\Starsea.Form.csproj">
+      <Project>{09b7410c-9099-4160-90f5-df7f4ba05647}</Project>
+      <Name>Starsea.Form</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Starsea.Framework\Starsea.Framework.csproj">
       <Project>{0F026712-F7EF-4310-B4EB-DC1CFA2B598F}</Project>
       <Name>Starsea.Framework</Name>
@@ -167,6 +185,10 @@
     <ProjectReference Include="..\Starsea.UI.Control\Starsea.UIControl.csproj">
       <Project>{06ECE53A-1F9D-4576-9639-6C7B95C31C78}</Project>
       <Name>Starsea.UIControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Starsea.Workflow\Starsea.Workflow.csproj">
+      <Project>{4737ddcc-148f-4e24-862f-870748f9c2bf}</Project>
+      <Name>Starsea.Workflow</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -1,5 +1,12 @@
 G:\GitHubSrc\StarseaDesktop\Starsea.DB\bin\Debug\Starsea.DB.dll
 G:\GitHubSrc\StarseaDesktop\Starsea.DB\bin\Debug\Starsea.DB.pdb
-G:\GitHubSrc\StarseaDesktop\Starsea.DB\obj\Debug\Starsea.DB.csprojResolveAssemblyReference.cache
 G:\GitHubSrc\StarseaDesktop\Starsea.DB\obj\Debug\Starsea.DB.dll
 G:\GitHubSrc\StarseaDesktop\Starsea.DB\obj\Debug\Starsea.DB.pdb
+G:\GitHubSrc\StarseaDesktop\Starsea.DB\bin\Debug\Starsea.DB.dll.config
+G:\GitHubSrc\StarseaDesktop\Starsea.DB\bin\Debug\EntityFramework.dll
+G:\GitHubSrc\StarseaDesktop\Starsea.DB\bin\Debug\EntityFramework.SqlServer.dll
+G:\GitHubSrc\StarseaDesktop\Starsea.DB\bin\Debug\EntityFramework.xml
+G:\GitHubSrc\StarseaDesktop\Starsea.DB\bin\Debug\EntityFramework.SqlServer.xml
+G:\GitHubSrc\StarseaDesktop\Starsea.DB\bin\Debug\zh-Hans\EntityFramework.resources.dll
+G:\GitHubSrc\StarseaDesktop\Starsea.DB\bin\Debug\zh-Hans\EntityFramework.SqlServer.resources.dll
+G:\GitHubSrc\StarseaDesktop\Starsea.DB\obj\Debug\Starsea.DB.csprojResolveAssemblyReference.cache

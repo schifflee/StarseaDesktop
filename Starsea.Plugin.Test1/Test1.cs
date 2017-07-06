@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Starsea.DB;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +12,24 @@ namespace Starsea.Plugin.Test1
     {
         public void funcTest1(object sender, EventArgs e)
         {
-            MessageBox.Show("test1");
+           // MessageBox.Show("test1");
+
+            using (QuickDevEntities context = new QuickDevEntities()) {
+                var query = from account in context.BASE_ACCOUNT
+                            select new
+                            {
+                                a = account.ACCOUNT,
+                                b = account.PASSWORD
+
+
+                            };
+                foreach (var item in query) {
+                    string msg = string.Format("account:{0},password:{1}", item.a,item.b);
+                    MessageBox.Show(msg);
+                }
+
+            }
+
         }
 
         public void funcTest2(object sender, EventArgs e)

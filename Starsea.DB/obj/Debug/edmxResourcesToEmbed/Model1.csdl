@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QuickDevModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="QuickDevEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="BASE_ACCOUNT" EntityType="QuickDevModel.BASE_ACCOUNT" />
+    <EntitySet Name="Blogs" EntityType="QuickDevModel.Blog" />
+    <EntitySet Name="BlogArticles" EntityType="QuickDevModel.BlogArticle" />
+    <AssociationSet Name="BlogBlogArticle" Association="QuickDevModel.BlogBlogArticle">
+      <End Role="Blog" EntitySet="Blogs" />
+      <End Role="BlogArticle" EntitySet="BlogArticles" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="BASE_ACCOUNT">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="ACCOUNT" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Name="PASSWORD" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Name="PERSONNAME" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Name="AGE" Type="Decimal" Precision="2" Scale="0" />
+    <Property Name="SEX" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Blog">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OwnerID" Type="Guid" Nullable="false" />
+    <Property Name="Caption" Type="String" Nullable="false" />
+    <Property Name="DateCreate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="BlogArticles" Relationship="QuickDevModel.BlogBlogArticle" FromRole="Blog" ToRole="BlogArticle" />
+  </EntityType>
+  <EntityType Name="BlogArticle">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BlogId" Type="Guid" Nullable="false" />
+    <Property Name="Subject" Type="String" Nullable="false" />
+    <Property Name="DateCreate" Type="DateTime" Nullable="false" />
+    <Property Name="DateModify" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="Blog" Relationship="QuickDevModel.BlogBlogArticle" FromRole="BlogArticle" ToRole="Blog" />
+  </EntityType>
+  <Association Name="BlogBlogArticle">
+    <End Type="QuickDevModel.Blog" Role="Blog" Multiplicity="1" />
+    <End Type="QuickDevModel.BlogArticle" Role="BlogArticle" Multiplicity="*" />
+  </Association>
+</Schema>

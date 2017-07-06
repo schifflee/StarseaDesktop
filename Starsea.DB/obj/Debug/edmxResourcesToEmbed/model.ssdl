@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QuickDevModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--生成过程中发现错误:
+警告 6013: 表/视图“QuickDev.dbo.BASE_USER”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+        <EntityType Name="BASE_USER">
+          <Property Name="ID" Type="nchar" MaxLength="10" />
+          <Property Name="ACCOUNT" Type="nchar" MaxLength="10" />
+          <Property Name="PASSWORD" Type="nchar" MaxLength="10" />
+          <Property Name="USERNAME" Type="nchar" MaxLength="10" />
+          <Property Name="SEX" Type="nchar" MaxLength="10" />
+          <Property Name="AGE" Type="nchar" MaxLength="10" />
+          <Property Name="IMAGE" Type="bit" />
+        </EntityType>-->
+  <EntityContainer Name="QuickDevModelStoreContainer" />
+</Schema>

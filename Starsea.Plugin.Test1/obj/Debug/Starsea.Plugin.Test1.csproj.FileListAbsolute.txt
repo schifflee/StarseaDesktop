@@ -5,3 +5,9 @@ G:\GitHubSrc\StarseaDesktop\Starsea.Plugin.Test1\obj\Debug\Starsea.Plugin.Test1.
 G:\GitHubSrc\StarseaDesktop\Starsea.Plugin.Test1\obj\Debug\Starsea.Plugin.Test1.pdb
 G:\GitHubSrc\StarseaDesktop\Starsea.Desktop\bin\Debug\Plugins\Test1\Plugin.xml
 G:\GitHubSrc\StarseaDesktop\Starsea.Desktop\bin\Debug\Plugins\Test1\Resource\Images\Menu\logo.png
+G:\GitHubSrc\StarseaDesktop\Starsea.Desktop\bin\Debug\Plugins\Test1\Starsea.Plugin.Test1.dll.config
+G:\GitHubSrc\StarseaDesktop\Desktop\Plugins\Test1\Plugin.xml
+G:\GitHubSrc\StarseaDesktop\Desktop\Plugins\Test1\Resource\Images\Menu\logo.png
+G:\GitHubSrc\StarseaDesktop\Desktop\Plugins\Test1\Starsea.Plugin.Test1.dll.config
+G:\GitHubSrc\StarseaDesktop\Desktop\Plugins\Test1\Starsea.Plugin.Test1.dll
+G:\GitHubSrc\StarseaDesktop\Desktop\Plugins\Test1\Starsea.Plugin.Test1.pdb

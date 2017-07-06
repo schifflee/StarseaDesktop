@@ -2,4 +2,3 @@ G:\GitHubSrc\StarseaDesktop\Starsea.Helper\bin\Debug\Starsea.Helper.dll
 G:\GitHubSrc\StarseaDesktop\Starsea.Helper\bin\Debug\Starsea.Helper.pdb
 G:\GitHubSrc\StarseaDesktop\Starsea.Helper\obj\Debug\Starsea.Helper.dll
 G:\GitHubSrc\StarseaDesktop\Starsea.Helper\obj\Debug\Starsea.Helper.pdb
-G:\GitHubSrc\StarseaDesktop\Starsea.Helper\obj\Debug\Starsea.Helper.csprojResolveAssemblyReference.cache

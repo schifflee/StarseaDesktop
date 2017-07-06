@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Config\PathConfig.cs" />
+    <Compile Include="Extension\Int32Extension.cs" />
     <Compile Include="Model\System\PluginInfo.cs" />
     <Compile Include="Model\XML\DockSite.cs" />
     <Compile Include="Model\XML\DockSiteBar.cs" />
