@@ -1,0 +1,12 @@
+F:\NEW_PLATFORM\代码\不动产房产中间库数据关联\Desktop\Plugins\MiddleLibrary\OVIT.BDC.MiddleLabrary.Data.dll.config
+F:\NEW_PLATFORM\代码\不动产房产中间库数据关联\Desktop\Plugins\MiddleLibrary\OVIT.BDC.MiddleLabrary.Data.dll
+F:\NEW_PLATFORM\代码\不动产房产中间库数据关联\Desktop\Plugins\MiddleLibrary\OVIT.BDC.MiddleLabrary.Data.pdb
+F:\NEW_PLATFORM\代码\不动产房产中间库数据关联\OVIT.BDC.MiddleLabrary.Data\obj\Debug\OVIT.BDC.MiddleLabrary.Data.csprojResolveAssemblyReference.cache
+F:\NEW_PLATFORM\代码\不动产房产中间库数据关联\OVIT.BDC.MiddleLabrary.Data\obj\Debug\OVIT.BDC.MiddleLabrary.Data.dll
+F:\NEW_PLATFORM\代码\不动产房产中间库数据关联\OVIT.BDC.MiddleLabrary.Data\obj\Debug\OVIT.BDC.MiddleLabrary.Data.pdb
+G:\GitHubSrc\StarseaDesktop\Desktop\Plugins\MiddleLibrary\OVIT.BDC.MiddleLabrary.Data.dll.config
+G:\GitHubSrc\StarseaDesktop\Desktop\Plugins\MiddleLibrary\OVIT.BDC.MiddleLabrary.Data.dll
+G:\GitHubSrc\StarseaDesktop\Desktop\Plugins\MiddleLibrary\OVIT.BDC.MiddleLabrary.Data.pdb
+G:\GitHubSrc\StarseaDesktop\OVIT.BDC.MiddleLabrary.Data\obj\Debug\OVIT.BDC.MiddleLabrary.Data.csprojResolveAssemblyReference.cache
+G:\GitHubSrc\StarseaDesktop\OVIT.BDC.MiddleLabrary.Data\obj\Debug\OVIT.BDC.MiddleLabrary.Data.dll
+G:\GitHubSrc\StarseaDesktop\OVIT.BDC.MiddleLabrary.Data\obj\Debug\OVIT.BDC.MiddleLabrary.Data.pdb

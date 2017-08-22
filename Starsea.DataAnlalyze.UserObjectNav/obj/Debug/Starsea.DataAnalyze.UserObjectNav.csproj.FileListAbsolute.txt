@@ -1,0 +1,8 @@
+G:\GitHubSrc\StarseaDesktop\Desktop\Plugins\DataAnalyze\Starsea.DataAnlalyze.UserObjectNav.dll.config
+G:\GitHubSrc\StarseaDesktop\Desktop\Plugins\DataAnalyze\Starsea.DataAnlalyze.UserObjectNav.dll
+G:\GitHubSrc\StarseaDesktop\Desktop\Plugins\DataAnalyze\Starsea.DataAnlalyze.UserObjectNav.pdb
+G:\GitHubSrc\StarseaDesktop\Starsea.DataAnlalyze.UserObjectNav\obj\Debug\Starsea.DataAnalyze.UserObjectNav.csprojResolveAssemblyReference.cache
+G:\GitHubSrc\StarseaDesktop\Starsea.DataAnlalyze.UserObjectNav\obj\Debug\Starsea.DataAnlalyze.UserObjectNav.UserObject.resources
+G:\GitHubSrc\StarseaDesktop\Starsea.DataAnlalyze.UserObjectNav\obj\Debug\Starsea.DataAnalyze.UserObjectNav.csproj.GenerateResource.Cache
+G:\GitHubSrc\StarseaDesktop\Starsea.DataAnlalyze.UserObjectNav\obj\Debug\Starsea.DataAnlalyze.UserObjectNav.dll
+G:\GitHubSrc\StarseaDesktop\Starsea.DataAnlalyze.UserObjectNav\obj\Debug\Starsea.DataAnlalyze.UserObjectNav.pdb

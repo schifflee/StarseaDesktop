@@ -1,26 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Windows>
-  <DockSite site="Left">    
-      <Bar>
-        <CloseSingleTab>true</CloseSingleTab>
-        <GrabHandleStyle>Caption</GrabHandleStyle>
-        <AutoSyncBarCaption>true</AutoSyncBarCaption>
-        <AlwaysDisplayDockTab>false</AlwaysDisplayDockTab>
-        <CanCustomize>false</CanCustomize>
-        <CanDockBottom>false</CanDockBottom>
-        <CanDockDocument>false</CanDockDocument>
-        <CanDockLeft>false</CanDockLeft>
-        <CanDockRight>false</CanDockRight>
-        <CanDockTop>false</CanDockTop>
-        <CanUndock>false</CanUndock>
-        <CanHide>false</CanHide>
-        <Visible>true</Visible>
-        <DockTabAlignment>Bottom</DockTabAlignment>
-        <SelectedDockTab>0</SelectedDockTab>
-      </Bar>   
-      <Width>300</Width>
-      <Height>600</Height>    
-  
+  <DockSite site="Left">
+    <Bar>
+      <CloseSingleTab>false</CloseSingleTab>
+      <GrabHandleStyle>Caption</GrabHandleStyle>
+      <AutoSyncBarCaption>true</AutoSyncBarCaption>
+      <AlwaysDisplayDockTab>false</AlwaysDisplayDockTab>
+      <CanCustomize>false</CanCustomize>
+      <CanDockBottom>false</CanDockBottom>
+      <CanDockDocument>false</CanDockDocument>
+      <CanDockLeft>false</CanDockLeft>
+      <CanDockRight>false</CanDockRight>
+      <CanDockTop>false</CanDockTop>
+      <CanUndock>false</CanUndock>
+      <CanHide>true</CanHide>
+      <Visible>true</Visible>
+      <DockTabAlignment>Bottom</DockTabAlignment>
+      <SelectedDockTab>0</SelectedDockTab>
+    </Bar>
+    <X>0</X>
+    <Y>0</Y>
+    <Width>353</Width>
+    <Height>600</Height>
+
   </DockSite>
   <DockSite site="Right">
     <Bar>
@@ -36,11 +38,13 @@
       <CanDockTop>false</CanDockTop>
       <CanUndock>false</CanUndock>
       <CanHide>false</CanHide>
-      <Visible>true</Visible>
+      <Visible>false</Visible>
       <DockTabAlignment>Bottom</DockTabAlignment>
       <SelectedDockTab>0</SelectedDockTab>
     </Bar>
-    <Width>300</Width>
+    <X>0</X>
+    <Y>0</Y>
+    <Width>600</Width>
     <Height>600</Height>
 
   </DockSite>
@@ -62,6 +66,8 @@
       <DockTabAlignment>Bottom</DockTabAlignment>
       <SelectedDockTab>0</SelectedDockTab>
     </Bar>
+     <X></X>
+    <Y></Y>
     <Width>800</Width>
     <Height>150</Height>
 
@@ -80,10 +86,12 @@
       <CanDockTop>false</CanDockTop>
       <CanUndock>false</CanUndock>
       <CanHide>false</CanHide>
-      <Visible>true</Visible>
+      <Visible>false</Visible>
       <DockTabAlignment>Bottom</DockTabAlignment>
       <SelectedDockTab>0</SelectedDockTab>
     </Bar>
+    <X>221</X>
+    <Y>555</Y>
     <Width>800</Width>
     <Height>150</Height>
 
@@ -106,6 +114,8 @@
       <DockTabAlignment>Top</DockTabAlignment>
       <SelectedDockTab>0</SelectedDockTab>
     </Bar>
+    <X>354</X>
+    <Y>155</Y>
     <Width>800</Width>
     <Height>600</Height>
   </DockSite>
@@ -130,7 +140,7 @@
   <DockSiteToolBar site="Bottom">
     <Bar>
       <LayoutType>ToolBar</LayoutType>
-      <Visible>true</Visible>
+      <Visible>false</Visible>
     </Bar>
   </DockSiteToolBar>
 

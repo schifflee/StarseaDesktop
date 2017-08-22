@@ -1,0 +1,8 @@
+G:\GitHubSrc\StarseaDesktop\Desktop\Plugins\DataAnalyze\Plugin.xml
+G:\GitHubSrc\StarseaDesktop\Desktop\Plugins\DataAnalyze\Resource\Images\Menu\logo.png
+G:\GitHubSrc\StarseaDesktop\Desktop\Plugins\DataAnalyze\Starsea.DataAnalyze.Main.dll
+G:\GitHubSrc\StarseaDesktop\Desktop\Plugins\DataAnalyze\Starsea.DataAnalyze.Main.pdb
+G:\GitHubSrc\StarseaDesktop\Starsea.DataAnalyze.Main\obj\Debug\Starsea.DataAnalyze.Main.csprojResolveAssemblyReference.cache
+G:\GitHubSrc\StarseaDesktop\Starsea.DataAnalyze.Main\obj\Debug\Starsea.DataAnalyze.Main.dll
+G:\GitHubSrc\StarseaDesktop\Starsea.DataAnalyze.Main\obj\Debug\Starsea.DataAnalyze.Main.pdb
+G:\GitHubSrc\StarseaDesktop\Desktop\Plugins\DataAnalyze\Resource\Images\Menu\File.png

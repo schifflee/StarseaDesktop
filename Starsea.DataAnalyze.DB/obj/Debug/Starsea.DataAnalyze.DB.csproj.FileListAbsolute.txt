@@ -1,0 +1,11 @@
+G:\GitHubSrc\StarseaDesktop\Starsea.DataAnalyze.DB\bin\Debug\Starsea.DataAnalyze.DB.dll
+G:\GitHubSrc\StarseaDesktop\Starsea.DataAnalyze.DB\bin\Debug\Starsea.DataAnalyze.DB.pdb
+G:\GitHubSrc\StarseaDesktop\Starsea.DataAnalyze.DB\bin\Debug\EntityFramework.dll
+G:\GitHubSrc\StarseaDesktop\Starsea.DataAnalyze.DB\bin\Debug\EntityFramework.SqlServer.dll
+G:\GitHubSrc\StarseaDesktop\Starsea.DataAnalyze.DB\bin\Debug\Oracle.ManagedDataAccess.dll
+G:\GitHubSrc\StarseaDesktop\Starsea.DataAnalyze.DB\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+G:\GitHubSrc\StarseaDesktop\Starsea.DataAnalyze.DB\bin\Debug\EntityFramework.xml
+G:\GitHubSrc\StarseaDesktop\Starsea.DataAnalyze.DB\bin\Debug\EntityFramework.SqlServer.xml
+G:\GitHubSrc\StarseaDesktop\Starsea.DataAnalyze.DB\obj\Debug\Starsea.DataAnalyze.DB.dll
+G:\GitHubSrc\StarseaDesktop\Starsea.DataAnalyze.DB\obj\Debug\Starsea.DataAnalyze.DB.pdb
+G:\GitHubSrc\StarseaDesktop\Starsea.DataAnalyze.DB\obj\Debug\Starsea.DataAnalyze.DB.csprojResolveAssemblyReference.cache

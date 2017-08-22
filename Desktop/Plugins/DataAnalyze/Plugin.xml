@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Plugin>
+  <Name>Starsea.DataAnalyze.Main</Name>
+  <Version>1.0</Version>
+  <Author>starsea</Author>
+  <Description>数据分析插件</Description>
+  <UI>
+    <Ribbon>
+      <Tab id="" index="1" text="数据">
+        <Bar id="" index="1" text="数据对象" >
+          <Item id="1" index="1" type="button"  text="表"  image="Menu/File.png"    dll=""  class=""   func=""  windowtype="main" ></Item>
+          <Item id="1" index="1" type="button"  text="试图"  image="Menu/File.png"     dll=""  class=""   func=""  windowtype="main" ></Item>
+          <Item id="1" index="1" type="button"  text="函数"  image="Menu/File.png"   dll=""  class=""   func=""  windowtype="main" ></Item>
+          <Item id="1" index="1" type="button"  text="存储过程"  image="Menu/File.png"     dll=""  class=""   func=""  windowtype="main" ></Item>
+        </Bar>
+      </Tab>
+    </Ribbon>
+  </UI>
+  <Components>
+    <Component id="1" type="dock" site="left" text="用户对象" dll="Starsea.DataAnalyze.Main.dll" class="Starsea.DataAnalyze.Main.Activity" func="ShowUserObject" ></Component>
+    <Component id="2" type="dock" site="fill" text="用户表" dll="Starsea.DataAnalyze.Main.dll" class="Starsea.DataAnalyze.Main.Activity" func="ShowAllTable" ></Component>
+    <Component id="3" type="dock" site="fill" text="用户试图" dll="Starsea.DataAnalyze.Main.dll" class="Starsea.DataAnalyze.Main.Activity" func="ShowAllView" ></Component>
+    <Component id="4" type="dock" site="fill" text="用户函数" dll="Starsea.DataAnalyze.Main.dll" class="Starsea.DataAnalyze.Main.Activity" func="ShowAllFunction" ></Component>
+    <Component id="5" type="dock" site="fill" text="用户存储过程" dll="Starsea.DataAnalyze.Main.dll" class="Starsea.DataAnalyze.Main.Activity" func="ShowAllProcude" ></Component>
+  </Components>
+
+</Plugin>

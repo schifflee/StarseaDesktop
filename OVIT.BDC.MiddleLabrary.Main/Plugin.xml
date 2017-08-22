@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Plugin>
+  <Name>Starsea.DataAnalyze.Main</Name>
+  <Version>1.0</Version>
+  <Author>starsea</Author>
+  <Description>房产中间库</Description>
+  <UI>
+    <Ribbon>
+      <Tab id="" index="1" text="数据关联">
+        <Bar id="" index="1" text="刷新" >
+          <Item id="1" index="1" type="button"  text="测试"  image="Menu/logo.png"    dll=""  class=""   func=""  windowtype="main" ></Item>
+        </Bar>
+      </Tab>
+    </Ribbon>
+  </UI>
+  <Components>
+    <Component id="1" type="dock" site="left" text="房产信息" dll="OVIT.BDC.MiddleLabrary.Main.dll" class="OVIT.BDC.MiddleLabrary.Main.Activity" func="LoadFCSJ" ></Component>
+    <Component id="2" type="dock" site="fill" text="不动产地图" dll="OVIT.BDC.MiddleLabrary.Main.dll" class="OVIT.BDC.MiddleLabrary.Main.Activity" func="LoadBDCMapData " ></Component>
+  </Components>
+  <Config>
+    <Key name="server" value="192.168.7.147"></Key>
+    <Key name="instance" value="sde:oracle11g:jsbdcdj"></Key>
+    <Key name="user" value="sde"></Key>
+    <Key name="password" value="sa"></Key>
+  </Config>
+  <Resource>
+    <File name="mxd" desc="不动产图形数据配置文件" type="mxd" path="Files\Mxd\不动产.mxd"></File>
+    <File name="menuico" desc="菜单图标" type="png" path="Images\Menu\logo.png"></File>
+  </Resource>
+</Plugin>

@@ -16,7 +16,7 @@ namespace Starsea.Helper
             Assembly accembly = null;
             try
             {
-                accembly = Assembly.LoadFile(dllPath);
+                accembly = Assembly.LoadFrom(dllPath);
             }
             catch (FileLoadException ex1)
             {

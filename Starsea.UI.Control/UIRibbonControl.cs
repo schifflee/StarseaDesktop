@@ -11,12 +11,14 @@ namespace Starsea.UIControl
     {
 
        public UIRibbonControl() {
+            
+
             this.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.CaptionVisible = true;
             // RibbonControl this = new DevComponents.DotNetBar.RibbonControl();
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.CaptionVisible = true;
+           // this.CaptionVisible = true;
             this.Dock = System.Windows.Forms.DockStyle.Top;
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;

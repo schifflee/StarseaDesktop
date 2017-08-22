@@ -14,6 +14,13 @@ namespace Starsea.Framework.Model.XML
         [XmlElement("Bar")]
         public DockSiteBar Bar { get; set; }
 
+        [XmlElement("X")]
+        public int X { get; set; }
+
+        [XmlElement("Y")]
+        public int Y { get; set; }
+
+
         [XmlElement("Width")]
         public int Width { get; set; }
 

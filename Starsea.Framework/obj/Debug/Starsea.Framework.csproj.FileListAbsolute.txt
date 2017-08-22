@@ -3,3 +3,12 @@ G:\GitHubSrc\StarseaDesktop\Starsea.Framework\bin\Debug\Starsea.Framework.pdb
 G:\GitHubSrc\StarseaDesktop\Starsea.Framework\obj\Debug\Starsea.Framework.dll
 G:\GitHubSrc\StarseaDesktop\Starsea.Framework\obj\Debug\Starsea.Framework.pdb
 G:\GitHubSrc\StarseaDesktop\Starsea.Framework\obj\Debug\Starsea.Framework.csprojResolveAssemblyReference.cache
+F:\NEW_PLATFORM\代码\不动产房产中间库数据关联\Starsea.Framework\bin\Debug\Starsea.Framework.dll
+F:\NEW_PLATFORM\代码\不动产房产中间库数据关联\Starsea.Framework\bin\Debug\Starsea.Framework.pdb
+F:\NEW_PLATFORM\代码\不动产房产中间库数据关联\Starsea.Framework\obj\Debug\Starsea.Framework.csprojResolveAssemblyReference.cache
+F:\NEW_PLATFORM\代码\不动产房产中间库数据关联\Starsea.Framework\obj\Debug\Starsea.Framework.dll
+F:\NEW_PLATFORM\代码\不动产房产中间库数据关联\Starsea.Framework\obj\Debug\Starsea.Framework.pdb
+G:\GitHubSrc\StarseaDesktop\Starsea.Framework\bin\Debug\DevComponents.DotNetBar2.dll
+G:\GitHubSrc\StarseaDesktop\Starsea.Framework\bin\Debug\Starsea.UIControl.dll
+G:\GitHubSrc\StarseaDesktop\Starsea.Framework\bin\Debug\Starsea.UIControl.pdb
+G:\GitHubSrc\StarseaDesktop\Starsea.Framework\bin\Debug\DevComponents.DotNetBar2.xml

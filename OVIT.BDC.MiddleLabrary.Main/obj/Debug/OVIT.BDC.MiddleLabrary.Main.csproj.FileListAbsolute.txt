@@ -1,0 +1,16 @@
+F:\NEW_PLATFORM\代码\不动产房产中间库数据关联\Desktop\Plugins\MiddleLibrary\OVIT.BDC.MiddleLabrary.Main.dll
+F:\NEW_PLATFORM\代码\不动产房产中间库数据关联\Desktop\Plugins\MiddleLibrary\OVIT.BDC.MiddleLabrary.Main.pdb
+F:\NEW_PLATFORM\代码\不动产房产中间库数据关联\OVIT.BDC.MiddleLabrary.Main\obj\Debug\OVIT.BDC.MiddleLabrary.Main.csprojResolveAssemblyReference.cache
+F:\NEW_PLATFORM\代码\不动产房产中间库数据关联\OVIT.BDC.MiddleLabrary.Main\obj\Debug\OVIT.BDC.MiddleLabrary.Main.dll
+F:\NEW_PLATFORM\代码\不动产房产中间库数据关联\OVIT.BDC.MiddleLabrary.Main\obj\Debug\OVIT.BDC.MiddleLabrary.Main.pdb
+F:\NEW_PLATFORM\代码\不动产房产中间库数据关联\Desktop\Plugins\MiddleLibrary\Plugin.xml
+F:\NEW_PLATFORM\代码\不动产房产中间库数据关联\Desktop\Plugins\MiddleLibrary\Resource\Images\Menu\logo.png
+F:\NEW_PLATFORM\代码\不动产房产中间库数据关联\Desktop\Plugins\MiddleLibrary\Resource\Files\Mxd\不动产.mxd
+G:\GitHubSrc\StarseaDesktop\Desktop\Plugins\MiddleLibrary\Plugin.xml
+G:\GitHubSrc\StarseaDesktop\Desktop\Plugins\MiddleLibrary\Resource\Images\Menu\logo.png
+G:\GitHubSrc\StarseaDesktop\Desktop\Plugins\MiddleLibrary\Resource\Files\Mxd\不动产.mxd
+G:\GitHubSrc\StarseaDesktop\Desktop\Plugins\MiddleLibrary\OVIT.BDC.MiddleLabrary.Main.dll
+G:\GitHubSrc\StarseaDesktop\Desktop\Plugins\MiddleLibrary\OVIT.BDC.MiddleLabrary.Main.pdb
+G:\GitHubSrc\StarseaDesktop\OVIT.BDC.MiddleLabrary.Main\obj\Debug\OVIT.BDC.MiddleLabrary.Main.csprojResolveAssemblyReference.cache
+G:\GitHubSrc\StarseaDesktop\OVIT.BDC.MiddleLabrary.Main\obj\Debug\OVIT.BDC.MiddleLabrary.Main.dll
+G:\GitHubSrc\StarseaDesktop\OVIT.BDC.MiddleLabrary.Main\obj\Debug\OVIT.BDC.MiddleLabrary.Main.pdb

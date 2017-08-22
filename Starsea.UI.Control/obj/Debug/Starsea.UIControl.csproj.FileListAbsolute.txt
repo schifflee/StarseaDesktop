@@ -10,3 +10,15 @@ G:\GitHubSrc\StarseaDesktop\Starsea.UI.Control\bin\Debug\DevComponents.DotNetBar
 G:\GitHubSrc\StarseaDesktop\Starsea.UI.Control\obj\Debug\Starsea.UIControl.csprojResolveAssemblyReference.cache
 G:\GitHubSrc\StarseaDesktop\Starsea.UI.Control\obj\Debug\Starsea.UIControl.dll
 G:\GitHubSrc\StarseaDesktop\Starsea.UI.Control\obj\Debug\Starsea.UIControl.pdb
+F:\NEW_PLATFORM\代码\不动产房产中间库数据关联\Starsea.UI.Control\bin\Debug\Starsea.UIControl.dll
+F:\NEW_PLATFORM\代码\不动产房产中间库数据关联\Starsea.UI.Control\bin\Debug\Starsea.UIControl.pdb
+F:\NEW_PLATFORM\代码\不动产房产中间库数据关联\Starsea.UI.Control\bin\Debug\ComponentFactory.Krypton.Navigator.dll
+F:\NEW_PLATFORM\代码\不动产房产中间库数据关联\Starsea.UI.Control\bin\Debug\ComponentFactory.Krypton.Ribbon.dll
+F:\NEW_PLATFORM\代码\不动产房产中间库数据关联\Starsea.UI.Control\bin\Debug\ComponentFactory.Krypton.Toolkit.dll
+F:\NEW_PLATFORM\代码\不动产房产中间库数据关联\Starsea.UI.Control\bin\Debug\DevComponents.DotNetBar2.dll
+F:\NEW_PLATFORM\代码\不动产房产中间库数据关联\Starsea.UI.Control\bin\Debug\Starsea.Helper.dll
+F:\NEW_PLATFORM\代码\不动产房产中间库数据关联\Starsea.UI.Control\bin\Debug\Starsea.Helper.pdb
+F:\NEW_PLATFORM\代码\不动产房产中间库数据关联\Starsea.UI.Control\bin\Debug\DevComponents.DotNetBar2.xml
+F:\NEW_PLATFORM\代码\不动产房产中间库数据关联\Starsea.UI.Control\obj\Debug\Starsea.UIControl.csprojResolveAssemblyReference.cache
+F:\NEW_PLATFORM\代码\不动产房产中间库数据关联\Starsea.UI.Control\obj\Debug\Starsea.UIControl.dll
+F:\NEW_PLATFORM\代码\不动产房产中间库数据关联\Starsea.UI.Control\obj\Debug\Starsea.UIControl.pdb

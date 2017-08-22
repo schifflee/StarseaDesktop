@@ -48,5 +48,7 @@ namespace Starsea.Framework.Config
         {
             get { return AppFolder + "\\Plugins\\"; }
         }
+
+        
     }
 }

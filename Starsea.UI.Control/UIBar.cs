@@ -50,5 +50,7 @@ namespace Starsea.UIControl
             // this.SuspendLayout();
 
         }
+
+      
     }
 }

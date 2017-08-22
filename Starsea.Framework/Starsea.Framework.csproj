@@ -30,8 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=12.7.0.10, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,6 +44,8 @@
   <ItemGroup>
     <Compile Include="Config\PathConfig.cs" />
     <Compile Include="Extension\Int32Extension.cs" />
+    <Compile Include="Interface\IPlugConfig.cs" />
+    <Compile Include="Interface\IPlugResource.cs" />
     <Compile Include="Model\System\PluginInfo.cs" />
     <Compile Include="Model\XML\DockSite.cs" />
     <Compile Include="Model\XML\DockSiteBar.cs" />
@@ -49,15 +53,24 @@
     <Compile Include="Model\XML\DockSiteToolBarBar.cs" />
     <Compile Include="Model\XML\DockWindow.cs" />
     <Compile Include="Model\XML\Plugin.cs" />
+    <Compile Include="Model\XML\RibbonApplicationButton.cs" />
     <Compile Include="Model\XML\RibbonBar.cs" />
     <Compile Include="Model\XML\RibbonItem.cs" />
+    <Compile Include="Model\XML\RibbonQuickToolBar.cs" />
     <Compile Include="Model\XML\RibbonTab.cs" />
     <Compile Include="Model\XML\Ribbon.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UICore\DockPanelHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Action\" />
     <Folder Include="Enum\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Starsea.UI.Control\Starsea.UIControl.csproj">
+      <Project>{06ECE53A-1F9D-4576-9639-6C7B95C31C78}</Project>
+      <Name>Starsea.UIControl</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

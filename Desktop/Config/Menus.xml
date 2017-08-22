@@ -1,6 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Ribbon>
-  <Tab id="" index="1" text="界面操作">
+  <!--<QuickToolBar>
+    <Item id="1" index="1" type="button"  text="left隐藏显示"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
+    <Item id="1" index="1" type="button"  text="left隐藏显示"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
+  </QuickToolBar>-->
+  <ApplicationButton text="菜单" visible="false">
+    
+  </ApplicationButton>
+  <!--<Tab id="" index="1" text="界面操作">
     <Bar id="" index="1" text="dock显示" >
       <Item id="1" index="1" type="button"  text="left隐藏显示"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
       <Item id="2" index="2" type="button"  text="right隐藏显示"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
@@ -28,8 +35,8 @@
       <Item id="5" index="5" type="button"  text="按钮5"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
       <Item id="6" index="6" type="button"  text="按钮6"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
     </Bar>  
-  </Tab>
-  <Tab id="" index="2" text="tab2">
+  </Tab>-->
+  <!--<Tab id="" index="2" text="tab2">
     <Bar id="" index="1" text="hello">
       <Item id="9" index="1"  type="button"  text="按钮9"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main"  ></Item>
       <Item id="2" index="2" type="button"  text="按钮2"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
@@ -47,5 +54,5 @@
       <Item id="2" index="2" type="button"  text="按钮2"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
       <Item id="3" index="3" type="button"  text="按钮3"  image="Menu/Document.png"  dll=""  class=""   func=""  windowtype="main" ></Item>
     </Bar>
-  </Tab>
+  </Tab>-->
 </Ribbon>

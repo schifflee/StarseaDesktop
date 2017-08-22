@@ -92,6 +92,9 @@
     <Compile Include="UITabStrip.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="UITextBoxDropDown.cs">
+      <SubType>Component</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Starsea.Helper\Starsea.Helper.csproj">
