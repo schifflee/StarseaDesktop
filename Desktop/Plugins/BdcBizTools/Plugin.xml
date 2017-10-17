@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Plugin>
+  <Name>OVIT.BDC.ExchangeData.Tools</Name>
+  <Version>1.0</Version>
+  <Author>starsea</Author>
+  <Description>不动产数据上报工具</Description>
+  <UI>
+    <Ribbon>
+      <Tab id="" index="1" text="查询">
+        <Bar id="" index="1" text="上报情况" >
+          <Item id="1" index="1" type="button"  text="日上报"  image="Menu/Calender.png"     dll="OVIT.BDC.ExchangeData.Tools.dll"  class="OVIT.BDC.ExchangeData.Tools.Activity"   func="ShowDayUpload"  windowtype="fill" ></Item>
+          <Item id="2" index="2" type="button"  text="周上报"  image="Menu/Calender.png"     dll="OVIT.BDC.ExchangeData.Tools.dll"  class="OVIT.BDC.ExchangeData.Tools.Activity"   func="ShowWeekUpload"  windowtype="fill" ></Item>
+          <Item id="3" index="3" type="button"  text="月上报"  image="Menu/Calender.png"     dll="OVIT.BDC.ExchangeData.Tools.dll"  class="OVIT.BDC.ExchangeData.Tools.Activity"   func="ShowMonthUpload"  windowtype="fill" ></Item>
+          <Item id="4" index="4" type="button"  text="年上报"  image="Menu/Calender.png"     dll="OVIT.BDC.ExchangeData.Tools.dll"  class="OVIT.BDC.ExchangeData.Tools.Activity"   func="ShowYearUpload"  windowtype="fill" ></Item>
+        </Bar>
+        <Bar id="" index="1" text="报文查询" >
+          <Item id="1" index="1" type="button"  text="所有报文"  image="Menu/File.png"      dll="OVIT.BDC.ExchangeData.Tools.dll"  class="OVIT.BDC.ExchangeData.Tools.Activity"   func="ShowAllBiz"  windowtype="fill" ></Item>
+          <Item id="2" index="2" type="button"  text="等待生成"  image="Menu/Cross.png"     dll="OVIT.BDC.ExchangeData.Tools.dll"  class="OVIT.BDC.ExchangeData.Tools.Activity"   func="ShowWaitCreateBiz"  windowtype="fill" ></Item>
+          <Item id="2" index="2" type="button"  text="等待验证"  image="Menu/Cross.png"     dll="OVIT.BDC.ExchangeData.Tools.dll"  class="OVIT.BDC.ExchangeData.Tools.Activity"   func="ShowWaitCheckBiz"  windowtype="fill" ></Item>
+          <Item id="2" index="2" type="button"  text="等待上传"  image="Menu/Cross.png"     dll="OVIT.BDC.ExchangeData.Tools.dll"  class="OVIT.BDC.ExchangeData.Tools.Activity"   func="ShowWaitUploadBiz"  windowtype="fill" ></Item>
+          <Item id="2" index="2" type="button"  text="等待响应"  image="Menu/Cross.png"     dll="OVIT.BDC.ExchangeData.Tools.dll"  class="OVIT.BDC.ExchangeData.Tools.Activity"   func="ShowWaitResponseBiz"  windowtype="fill" ></Item>
+
+        </Bar>
+        <Bar id="" index="1" text="日志报文查询" >
+          <Item id="1" index="1" type="button"  text="日志报文"  image="Menu/File.png"    dll="OVIT.BDC.ExchangeData.Tools.dll"  class="OVIT.BDC.ExchangeData.Tools.Activity"   func="ShowAllLogBiz"  windowtype="fill" ></Item>
+        </Bar>
+        <Bar id="" index="1" text="问题报文查询" >
+          <Item id="4" index="4" type="button"  text="生成失败"  image="Menu/Cross.png"     dll="OVIT.BDC.ExchangeData.Tools.dll"  class="OVIT.BDC.ExchangeData.Tools.Activity"   func="ShowFailureCreateBiz"  windowtype="fill" ></Item>
+          <Item id="2" index="2" type="button"  text="验证失败"  image="Menu/Cross.png"     dll="OVIT.BDC.ExchangeData.Tools.dll"  class="OVIT.BDC.ExchangeData.Tools.Activity"   func="ShowFailureCheckBiz"  windowtype="fill" ></Item>
+          <Item id="1" index="1" type="button"  text="推送失败"  image="Menu/Cross.png"     dll="OVIT.BDC.ExchangeData.Tools.dll"  class="OVIT.BDC.ExchangeData.Tools.Activity"   func="ShowFailureUploadBiz"  windowtype="fill" ></Item>
+          <Item id="2" index="2" type="button"  text="响应失败"  image="Menu/Cross.png"     dll="OVIT.BDC.ExchangeData.Tools.dll"  class="OVIT.BDC.ExchangeData.Tools.Activity"   func="ShowFailureResponseBiz"  windowtype="fill" ></Item>
+          <Item id="3" index="3" type="button"  text="汇交失败"  image="Menu/Cross.png"     dll="OVIT.BDC.ExchangeData.Tools.dll"  class="OVIT.BDC.ExchangeData.Tools.Activity"   func="ShowFailureHJBiz"  windowtype="fill" ></Item>
+
+        </Bar>
+      </Tab>
+      <Tab id="" index="1" text="报文处理">
+        <Bar id="" index="1" text="状态重置" >
+          <Item id="1" index="1" type="button"  text="验证失败重置"  image="Menu/Alert.png"    dll="OVIT.BDC.ExchangeData.Tools.dll"  class="OVIT.BDC.ExchangeData.Tools.Activity"   func="ResetCheckFailureStatus"  windowtype="fill" ></Item>
+          <Item id="2" index="2" type="button"  text="上传失败重置"  image="Menu/Alert.png"     dll="OVIT.BDC.ExchangeData.Tools.dll"  class="OVIT.BDC.ExchangeData.Tools.Activity"   func="ResetUploadFailureStatus"  windowtype="fill" ></Item>
+          <Item id="3" index="3" type="button"  text="响应失败重置"  image="Menu/Alert.png"   dll="OVIT.BDC.ExchangeData.Tools.dll"  class="OVIT.BDC.ExchangeData.Tools.Activity"   func="ResetResponeFailureStatus"  windowtype="fill" ></Item>
+          <Item id="4" index="4" type="button"  text="汇交失败重置"  image="Menu/Alert.png"     dll="OVIT.BDC.ExchangeData.Tools.dll"  class="OVIT.BDC.ExchangeData.Tools.Activity"   func="ResetHJFailureStatus"  windowtype="fill" ></Item>
+        </Bar>
+        <Bar id="" index="1" text="其它" >
+          <Item id="1" index="1" type="button"  text="重复上报处理"  image="Menu/Tools.png"    dll="OVIT.BDC.ExchangeData.Tools.dll"  class="OVIT.BDC.ExchangeData.Tools.Activity"   func="HandleOtherCFSB"  windowtype="fill" ></Item>
+          <Item id="2" index="2" type="button"  text="Repeat表countstring数据更正"  image="Menu/Tools.png"     dll="OVIT.BDC.ExchangeData.Tools.dll"  class="OVIT.BDC.ExchangeData.Tools.Activity"   func="HandleOtherCFJSGZ"  windowtype="fill" ></Item>
+          <Item id="3" index="3" type="button"  text="上报状态重复记录清楚"  image="Menu/Tools.png"   dll="OVIT.BDC.ExchangeData.Tools.dll"  class="OVIT.BDC.ExchangeData.Tools.Activity"   func="HandleOtherSBCFJLQC"  windowtype="fill" ></Item>
+          <Item id="4" index="4" type="button"  text="黄冈失败反馈报文处理"  image="Menu/Tools.png"     dll="OVIT.BDC.ExchangeData.Tools.dll"  class="OVIT.BDC.ExchangeData.Tools.Activity"   func="HandleOtherHGSBFKBWCL"  windowtype="fill" ></Item>
+        </Bar>
+      </Tab>
+      <Tab id="" index="1" text="配置">
+        <Bar id="" index="1" text="系统配置" >
+          <Item id="1" index="1" type="button"  text="业务数据模板"  image="Menu/Tools.png"    dll="OVIT.BDC.ExchangeData.Tools.dll"  class="OVIT.BDC.ExchangeData.Tools.Activity"   func="ConfigYwTemplate"  windowtype="fill" ></Item>
+          <Item id="2" index="2" type="button"  text="报文字段验证"  image="Menu/Tools.png"     dll="OVIT.BDC.ExchangeData.Tools.dll"  class="OVIT.BDC.ExchangeData.Tools.Activity"   func="ConfigBizColumnCheck"  windowtype="fill" ></Item>
+          <Item id="3" index="3" type="button"  text="检查xml"  image="Menu/Tools.png"   dll="OVIT.BDC.ExchangeData.Tools.dll"  class="OVIT.BDC.ExchangeData.Tools.Activity"   func="CheckBizXml"  windowtype="fill" ></Item>
+          <Item id="4" index="4" type="button"  text="webservice服务测试"  image="Menu/Tools.png"     dll="OVIT.BDC.ExchangeData.Tools.dll"  class="OVIT.BDC.ExchangeData.Tools.Activity"   func="WsCheck"  windowtype="fill" ></Item>
+        </Bar>
+      </Tab>
+      <Tab id="" index="1" text="系统管理">
+        <Bar id="" index="1" text="服务管理" >
+          <Item id="1" index="1" type="button"  text="坐标导出服务"  image="Menu/Tools.png"    dll="OVIT.BDC.ExchangeData.Tools.dll"  class="OVIT.BDC.ExchangeData.Tools.Activity"   func="ManageZBExportService"  windowtype="fill" ></Item>
+          <Item id="2" index="2" type="button"  text="报文上报"  image="Menu/Tools.png"     dll="OVIT.BDC.ExchangeData.Tools.dll"  class="OVIT.BDC.ExchangeData.Tools.Activity"   func="ManageBizService"  windowtype="fill" ></Item>
+          <Item id="3" index="3" type="button"  text="自动调用服务"  image="Menu/Tools.png"   dll="OVIT.BDC.ExchangeData.Tools.dll"  class="OVIT.BDC.ExchangeData.Tools.Activity"   func="ManageAutoWSService"  windowtype="fill" ></Item>
+          <Item id="4" index="4" type="button"  text="配置管理"  image="Menu/Tools.png"     dll="OVIT.BDC.ExchangeData.Tools.dll"  class="OVIT.BDC.ExchangeData.Tools.Activity"   func="ManageConfig"  windowtype="fill" ></Item>
+        </Bar>
+      </Tab>
+    </Ribbon>
+  </UI>
+  <Components>
+    <!--<Component id="1" type="dock" site="left" text="用户对象" dll="OVIT.BDC.ExchangeData.Tools.dll" class="OVIT.BDC.ExchangeData.Tools.Activity" func="ShowUserObject" ></Component>
+    <Component id="2" type="dock" site="fill" text="用户表" dll="OVIT.BDC.ExchangeData.Tools.dll" class="OVIT.BDC.ExchangeData.Tools.Activity" func="ShowAllTable" ></Component>
+    <Component id="3" type="dock" site="fill" text="用户试图" dll="OVIT.BDC.ExchangeData.Tools.dll" class="OVIT.BDC.ExchangeData.Tools.Activity" func="ShowAllView" ></Component>
+    <Component id="4" type="dock" site="fill" text="用户函数" dll="OVIT.BDC.ExchangeData.Tools.dll" class="OVIT.BDC.ExchangeData.Tools.Activity" func="ShowAllFunction" ></Component>
+    <Component id="5" type="dock" site="fill" text="用户存储过程" dll="OVIT.BDC.ExchangeData.Tools.dll" class="OVIT.BDC.ExchangeData.Tools.Activity" func="ShowAllProcude" ></Component>-->
+  </Components>
+
+</Plugin>

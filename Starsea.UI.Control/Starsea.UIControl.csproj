@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Starsea.UIControl</RootNamespace>
     <AssemblyName>Starsea.UIControl</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -39,6 +40,7 @@
     <Reference Include="ComponentFactory.Krypton.Toolkit">
       <HintPath>..\libs\ComponentFactory.Krypton.Toolkit.dll</HintPath>
     </Reference>
+    <Reference Include="DevComponents.DotNetBar.Charts, Version=12.7.0.10, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
     <Reference Include="DevComponents.DotNetBar2, Version=12.7.0.10, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -52,6 +54,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Chart\UIChartSeries.cs" />
+    <Compile Include="Chart\UIChartSeriesPoint.cs" />
+    <Compile Include="Chart\UIChartStyleBackground.cs" />
+    <Compile Include="Chart\UIChartStyleBorderColor.cs" />
+    <Compile Include="Chart\UIChartStylePadding.cs" />
+    <Compile Include="Chart\UIChartStyleThickness.cs" />
+    <Compile Include="Chart\UIChartTitle.cs" />
+    <Compile Include="Chart\UIChartBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Chart\UIChartXy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UIApplicationButton.cs">
       <SubType>Component</SubType>
@@ -102,5 +115,6 @@
       <Name>Starsea.Helper</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

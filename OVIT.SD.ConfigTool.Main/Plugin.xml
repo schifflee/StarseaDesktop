@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Plugin>
+  <Name>Starsea.SD.ConfigTool.Main</Name>
+  <Version>1.0</Version>
+  <Author>starsea</Author>
+  <Description>三调配置工具</Description>
+  <UI>
+    <Ribbon>
+      <Tab id="" index="1" text="配置">
+        <Bar id="" index="1" text="数据对象" >
+          <Item id="1" index="1" type="button"  text="菜单配置"  image="Menu/File.png"    dll="OVIT.SD.ConfigTool.Main.dll"  class="Starsea.DataAnalyze.Main.Activity"   func=""  windowtype="main" ></Item>
+       </Bar>
+      </Tab>
+    </Ribbon>
+  </UI>
+  <Components>
+    <Component id="1" type="dock" site="left" text="用户对象" dll="Starsea.DataAnalyze.Main.dll" class="Starsea.DataAnalyze.Main.Activity" func="ShowUserObject" ></Component>
+  </Components>
+
+</Plugin>

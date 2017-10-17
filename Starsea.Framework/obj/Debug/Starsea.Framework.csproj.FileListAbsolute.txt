@@ -12,3 +12,5 @@ G:\GitHubSrc\StarseaDesktop\Starsea.Framework\bin\Debug\DevComponents.DotNetBar2
 G:\GitHubSrc\StarseaDesktop\Starsea.Framework\bin\Debug\Starsea.UIControl.dll
 G:\GitHubSrc\StarseaDesktop\Starsea.Framework\bin\Debug\Starsea.UIControl.pdb
 G:\GitHubSrc\StarseaDesktop\Starsea.Framework\bin\Debug\DevComponents.DotNetBar2.xml
+G:\GitHubSrc\StarseaDesktop\Starsea.Framework\obj\Debug\Starsea.Framework.csproj.CoreCompileInputs.cache
+G:\GitHubSrc\StarseaDesktop\Starsea.Framework\bin\Debug\DevComponents.DotNetBar.Charts.dll

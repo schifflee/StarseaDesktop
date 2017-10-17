@@ -3,3 +3,4 @@ G:\GitHubSrc\StarseaDesktop\Starsea.Workflow\bin\Debug\Starsea.Workflow.pdb
 G:\GitHubSrc\StarseaDesktop\Starsea.Workflow\obj\Debug\Starsea.Workflow.dll
 G:\GitHubSrc\StarseaDesktop\Starsea.Workflow\obj\Debug\Starsea.Workflow.pdb
 G:\GitHubSrc\StarseaDesktop\Starsea.Workflow\obj\Debug\Starsea.Workflow.csprojResolveAssemblyReference.cache
+G:\GitHubSrc\StarseaDesktop\Starsea.Workflow\obj\Debug\Starsea.Workflow.csproj.CoreCompileInputs.cache

@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{409011C7-AC7B-4501-9A54-059774D73C33}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OVIT.BDC.ExchangeData.Tools</RootNamespace>
+    <AssemblyName>OVIT.BDC.ExchangeData.Tools</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\Desktop\Plugins\BdcBizTools\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.Charts.Design, Version=12.7.0.10, Culture=neutral, PublicKeyToken=90f470f34c89ccaf, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar.Charts, Version=12.7.0.10, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar.Keyboard, Version=12.7.0.10, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar.Layout, Version=12.7.0.10, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar.Schedule, Version=12.7.0.10, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar.SuperGrid, Version=12.7.0.10, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar2, Version=12.7.0.10, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.Instrumentation, Version=12.7.0.10, Culture=neutral, PublicKeyToken=f90dc37c26666a67, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.SuperGrid.Design, Version=12.7.0.10, Culture=neutral, PublicKeyToken=26d81176cfa2b486, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.TreeGX, Version=12.7.0.10, Culture=neutral, PublicKeyToken=055db68f670cfeab, processorArchitecture=MSIL" />
+    <Reference Include="OVIT.BDC.ExchangeData.DataAccess">
+      <HintPath>F:\NEW_PLATFORM\代码\郧阳不动产数据上报\OVIT.BDC.ExchangeData.DataAccess\bin\Debug\OVIT.BDC.ExchangeData.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="OVIT.BDC.ExchangeData.DataBase">
+      <HintPath>F:\NEW_PLATFORM\代码\郧阳不动产数据上报\OVIT.BDC.ExchangeData.DataBase\bin\Debug\OVIT.BDC.ExchangeData.DataBase.dll</HintPath>
+    </Reference>
+    <Reference Include="OVIT.BDC.ExchangeData.Framework">
+      <HintPath>F:\NEW_PLATFORM\代码\郧阳不动产数据上报\OVIT.BDC.ExchangeData.Framework\bin\Debug\OVIT.BDC.ExchangeData.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activity.cs" />
+    <Compile Include="Controls\ucCheckBizXml.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucCheckBizXml.Designer.cs">
+      <DependentUpon>ucCheckBizXml.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucConfigBizColumnCheck.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucConfigBizColumnCheck.Designer.cs">
+      <DependentUpon>ucConfigBizColumnCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucConfigYwTemplate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucConfigYwTemplate.Designer.cs">
+      <DependentUpon>ucConfigYwTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucHandleOtherCFJSGZ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucHandleOtherCFJSGZ.Designer.cs">
+      <DependentUpon>ucHandleOtherCFJSGZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucHandleOtherCFSB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucHandleOtherCFSB.Designer.cs">
+      <DependentUpon>ucHandleOtherCFSB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucHandleOtherHGSBFKBWCL.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucHandleOtherHGSBFKBWCL.Designer.cs">
+      <DependentUpon>ucHandleOtherHGSBFKBWCL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucHandleOtherSBCFJLQC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucHandleOtherSBCFJLQC.Designer.cs">
+      <DependentUpon>ucHandleOtherSBCFJLQC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucManageAutoWSService.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucManageAutoWSService.Designer.cs">
+      <DependentUpon>ucManageAutoWSService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucManageBizService.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucManageBizService.Designer.cs">
+      <DependentUpon>ucManageBizService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucManageConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucManageConfig.Designer.cs">
+      <DependentUpon>ucManageConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucManageZBExportService.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucManageZBExportService.Designer.cs">
+      <DependentUpon>ucManageZBExportService.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucResetCheckFailureStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucResetCheckFailureStatus.Designer.cs">
+      <DependentUpon>ucResetCheckFailureStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucResetHJFailureStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucResetHJFailureStatus.Designer.cs">
+      <DependentUpon>ucResetHJFailureStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucResetResponeFailureStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucResetResponeFailureStatus.Designer.cs">
+      <DependentUpon>ucResetResponeFailureStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucResetUploadFailureStatus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucResetUploadFailureStatus.Designer.cs">
+      <DependentUpon>ucResetUploadFailureStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucShowAllBiz.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucShowAllBiz.Designer.cs">
+      <DependentUpon>ucShowAllBiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucShowAllLogBiz.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucShowAllLogBiz.Designer.cs">
+      <DependentUpon>ucShowAllLogBiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucShowDayUpload.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucShowDayUpload.designer.cs">
+      <DependentUpon>ucShowDayUpload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucShowFailureCheckBiz.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucShowFailureCheckBiz.Designer.cs">
+      <DependentUpon>ucShowFailureCheckBiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucShowFailureCreateBiz.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucShowFailureCreateBiz.Designer.cs">
+      <DependentUpon>ucShowFailureCreateBiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucShowFailureHJBiz.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucShowFailureHJBiz.Designer.cs">
+      <DependentUpon>ucShowFailureHJBiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucShowFailureResponseBiz.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucShowFailureResponseBiz.Designer.cs">
+      <DependentUpon>ucShowFailureResponseBiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucShowFailureUploadBiz.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucShowFailureUploadBiz.Designer.cs">
+      <DependentUpon>ucShowFailureUploadBiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucShowMonthUpload.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucShowMonthUpload.Designer.cs">
+      <DependentUpon>ucShowMonthUpload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucShowShowWaitCheckBiz.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucShowShowWaitCheckBiz.Designer.cs">
+      <DependentUpon>ucShowShowWaitCheckBiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucShowWaitCreateBiz.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucShowWaitCreateBiz.Designer.cs">
+      <DependentUpon>ucShowWaitCreateBiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucShowWaitResponseBiz.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucShowWaitResponseBiz.Designer.cs">
+      <DependentUpon>ucShowWaitResponseBiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucShowWaitUploadBiz.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucShowWaitUploadBiz.Designer.cs">
+      <DependentUpon>ucShowWaitUploadBiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucShowWeekUpload.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucShowWeekUpload.Designer.cs">
+      <DependentUpon>ucShowWeekUpload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucShowYearUpload.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucShowYearUpload.Designer.cs">
+      <DependentUpon>ucShowYearUpload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ucWsCheck.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ucWsCheck.Designer.cs">
+      <DependentUpon>ucWsCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resource\Images\Menu\Home.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\Menu\Delete.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\Menu\Cross.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\Menu\Tick.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\Menu\Minus.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\Menu\Add.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\Menu\Alert.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\Menu\Info.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\Menu\Printer.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\Menu\Pencil-and-Ruler.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\Menu\Tools.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\Menu\Notepad.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\Menu\Calender.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Plugin.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="Resource\Images\Menu\File.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\Menu\File.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resource\Images\Menu\logo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Starsea.Framework\Starsea.Framework.csproj">
+      <Project>{0f026712-f7ef-4310-b4eb-dc1cfa2b598f}</Project>
+      <Name>Starsea.Framework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Starsea.Helper\Starsea.Helper.csproj">
+      <Project>{39840c45-6839-4d54-8eba-089c537884bf}</Project>
+      <Name>Starsea.Helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Starsea.UI.Control\Starsea.UIControl.csproj">
+      <Project>{06ece53a-1f9d-4576-9639-6c7b95c31c78}</Project>
+      <Name>Starsea.UIControl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\ucCheckBizXml.resx">
+      <DependentUpon>ucCheckBizXml.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucConfigBizColumnCheck.resx">
+      <DependentUpon>ucConfigBizColumnCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucConfigYwTemplate.resx">
+      <DependentUpon>ucConfigYwTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucHandleOtherCFJSGZ.resx">
+      <DependentUpon>ucHandleOtherCFJSGZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucHandleOtherCFSB.resx">
+      <DependentUpon>ucHandleOtherCFSB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucHandleOtherHGSBFKBWCL.resx">
+      <DependentUpon>ucHandleOtherHGSBFKBWCL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucHandleOtherSBCFJLQC.resx">
+      <DependentUpon>ucHandleOtherSBCFJLQC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucManageAutoWSService.resx">
+      <DependentUpon>ucManageAutoWSService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucManageBizService.resx">
+      <DependentUpon>ucManageBizService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucManageConfig.resx">
+      <DependentUpon>ucManageConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucManageZBExportService.resx">
+      <DependentUpon>ucManageZBExportService.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucResetCheckFailureStatus.resx">
+      <DependentUpon>ucResetCheckFailureStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucResetHJFailureStatus.resx">
+      <DependentUpon>ucResetHJFailureStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucResetResponeFailureStatus.resx">
+      <DependentUpon>ucResetResponeFailureStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucResetUploadFailureStatus.resx">
+      <DependentUpon>ucResetUploadFailureStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucShowAllBiz.resx">
+      <DependentUpon>ucShowAllBiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucShowAllLogBiz.resx">
+      <DependentUpon>ucShowAllLogBiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucShowDayUpload.resx">
+      <DependentUpon>ucShowDayUpload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucShowFailureCheckBiz.resx">
+      <DependentUpon>ucShowFailureCheckBiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucShowFailureCreateBiz.resx">
+      <DependentUpon>ucShowFailureCreateBiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucShowFailureHJBiz.resx">
+      <DependentUpon>ucShowFailureHJBiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucShowFailureResponseBiz.resx">
+      <DependentUpon>ucShowFailureResponseBiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucShowFailureUploadBiz.resx">
+      <DependentUpon>ucShowFailureUploadBiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucShowMonthUpload.resx">
+      <DependentUpon>ucShowMonthUpload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucShowShowWaitCheckBiz.resx">
+      <DependentUpon>ucShowShowWaitCheckBiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucShowWaitCreateBiz.resx">
+      <DependentUpon>ucShowWaitCreateBiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucShowWaitResponseBiz.resx">
+      <DependentUpon>ucShowWaitResponseBiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucShowWaitUploadBiz.resx">
+      <DependentUpon>ucShowWaitUploadBiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucShowWeekUpload.resx">
+      <DependentUpon>ucShowWeekUpload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucShowYearUpload.resx">
+      <DependentUpon>ucShowYearUpload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ucWsCheck.resx">
+      <DependentUpon>ucWsCheck.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

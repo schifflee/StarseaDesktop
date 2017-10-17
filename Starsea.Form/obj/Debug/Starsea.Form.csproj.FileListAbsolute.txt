@@ -3,3 +3,4 @@ G:\GitHubSrc\StarseaDesktop\Starsea.Form\bin\Debug\Starsea.Form.pdb
 G:\GitHubSrc\StarseaDesktop\Starsea.Form\obj\Debug\Starsea.Form.csprojResolveAssemblyReference.cache
 G:\GitHubSrc\StarseaDesktop\Starsea.Form\obj\Debug\Starsea.Form.dll
 G:\GitHubSrc\StarseaDesktop\Starsea.Form\obj\Debug\Starsea.Form.pdb
+G:\GitHubSrc\StarseaDesktop\Starsea.Form\obj\Debug\Starsea.Form.csproj.CoreCompileInputs.cache
